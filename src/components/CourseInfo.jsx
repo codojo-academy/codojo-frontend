@@ -8,6 +8,7 @@ const CourseInfo = () => {
         Well researched and highly effective curriculum
       </p>
       <div></div>
+      <div></div>
     </div>
   );
 };
