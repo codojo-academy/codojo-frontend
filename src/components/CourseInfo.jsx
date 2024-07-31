@@ -7,6 +7,7 @@ const CourseInfo = () => {
       <p className="text-center text-gray-600 mb-10 font-medium">
         Well researched and highly effective curriculum
       </p>
+      <div></div>
     </div>
   );
 };
