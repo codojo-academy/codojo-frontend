@@ -48,8 +48,13 @@ export default function Nav() {
             Features
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page" className="lg:flex">
+        <NavbarItem>
+          <Link
+            href="#"
+            aria-current="page"
+            className="lg:flex"
+            color="foreground"
+          >
             Customers
           </Link>
         </NavbarItem>
