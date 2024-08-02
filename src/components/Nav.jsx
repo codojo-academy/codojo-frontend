@@ -42,10 +42,10 @@ export default function Nav() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="sm:flex gap-4" justify="center">
+      <NavbarContent className="sm:flex gap-8 font-bold" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Features
+          <Link color="foreground" href="/">
+            Home
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -55,12 +55,12 @@ export default function Nav() {
             className="lg:flex"
             color="foreground"
           >
-            Customers
+            Courses
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
-            Integrations
+            About Us
           </Link>
         </NavbarItem>
       </NavbarContent>
