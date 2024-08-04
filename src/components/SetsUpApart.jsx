@@ -2,7 +2,7 @@ import { GoHome } from "react-icons/go";
 
 const SetsUpApart = () => {
   return (
-    <div className="p-8 bg-gray-100 min-h-screen mt-8 rounded-lg ">
+    <div className="p-8 bg-gray-100 min-h-screen mt-8 rounded-lg py-10 ">
       <h1 className="text-4xl font-bold mb-8 text-center">
         What really sets us apart.
       </h1>
