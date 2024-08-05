@@ -1,9 +1,10 @@
-import Content from "../components/Content";
-import ClassLook from "../components/ClassLook";
-import GettingStarted from "../components/GettingStarted";
-import CourseInfo from "../components/CourseInfo";
-import SetsUpApart from "../components/SetsUpApart";
-import TrialClassBanner from "../components/TrialClassBanner";
+import Content from "../components/codojo-homepage/Content";
+import ClassLook from "../components/codojo-homepage/ClassLook";
+import GettingStarted from "../components/codojo-homepage/GettingStarted";
+import CourseInfo from "../components/codojo-homepage/CourseInfo";
+import SetsUpApart from "../components/codojo-homepage/SetsUpApart";
+import TrialClassBanner from "../components/codojo-homepage/TrialClassBanner";
+import Footer from "../components/codojo-homepage/Footer";
 const Home = () => {
   return (
     <>
@@ -13,6 +14,7 @@ const Home = () => {
       <CourseInfo />
       <SetsUpApart />
       <TrialClassBanner />
+      <Footer />
     </>
   );
 };

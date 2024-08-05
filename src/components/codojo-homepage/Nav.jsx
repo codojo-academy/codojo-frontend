@@ -1,4 +1,3 @@
-// import React from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -10,7 +9,7 @@ import {
   Link,
   Button,
 } from "@nextui-org/react";
-// import {AcmeLogo} from "./AcmeLogo.jsx";
+
 import { useState } from "react";
 
 export default function Nav() {

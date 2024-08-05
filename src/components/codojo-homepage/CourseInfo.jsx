@@ -1,7 +1,3 @@
-// import { useState } from "react";
-// import downloadImage from "../assets/download.png";
-// import oneOneon from "../assets/oneonone.jpg";
-//
 // const CourseInfo = () => {
 //   const [activeIndex, setActiveIndex] = useState(0);
 //
@@ -165,8 +161,8 @@
 // export default CourseInfo;
 
 import { useState } from "react";
-import downloadImage from "../assets/download.png";
-import oneOneon from "../assets/oneonone.jpg";
+import downloadImage from "../images/download.png";
+import oneOneon from "../images/oneonone.jpg";
 
 const CourseInfo = () => {
   const [activeIndex, setActiveIndex] = useState(0);

@@ -1,4 +1,4 @@
-import oneOnone from "../assets/oneonone.jpg";
+import oneOnone from "../images/oneonone.jpg";
 
 const ClassLook = () => {
   return (

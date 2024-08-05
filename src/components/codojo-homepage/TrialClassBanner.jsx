@@ -23,7 +23,7 @@
 //
 // export default TrialClassBanner;
 
-import downloadImage from "../assets/download.png";
+import downloadImage from "../images/download.png";
 
 const TrialClassBanner = () => {
   return (
