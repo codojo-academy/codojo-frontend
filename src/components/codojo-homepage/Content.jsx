@@ -1,4 +1,4 @@
-import downloadImage from "../assets/download.png";
+import downloadImage from "../images/download.png";
 import { GoHome } from "react-icons/go";
 import { useNavigate } from "react-router-dom";
 
