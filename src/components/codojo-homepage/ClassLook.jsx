@@ -10,20 +10,20 @@ const ClassLook = () => {
         <div className="p-4 md:w-1/3 flex flex-col justify-center">
           <div className="rounded-lg shadow-lg  bg-gray-100 p-3">
             <h3 className="text-lg font-semibold mb-2">
-              Highly interactive and fun
+              Engaging and enjoyable
             </h3>
             <p className="mb-4 ">
-              Regular classes are filled with quizzes, games, activities and
-              challenges to ensure active participation of the kid.
+              Each class is packed with quizzes, games, activities, and
+              challenges to keep kids actively involved.
             </p>
           </div>
           <div className="rounded-lg shadow-lg bg-gray-100 p-3 mt-4">
             <h3 className="text-lg font-semibold mb-2">
-              Engaging Learning Experience
+              Interactive Learning Experience
             </h3>
             <p>
-              Each session is designed to be engaging and educational, keeping
-              the kids excited about learning.
+              Every session is crafted to be both captivating and informative,
+              ensuring kids stay enthusiastic about learning.
             </p>
           </div>
         </div>
@@ -37,11 +37,11 @@ const ClassLook = () => {
         <div className="text-grey p-4 md:w-1/3 flex flex-col justify-center">
           <div className="rounded-lg shadow-lg bg-gray-100 p-3">
             <h3 className="text-lg font-semibold mb-2">
-              Innovative Teaching Methods
+              Creative Teaching Approaches
             </h3>
             <p className="mb-4">
-              We use a variety of innovative teaching methods to cater to
-              different learning styles.
+              We employ diverse, innovative methods to accommodate various
+              learning styles.
             </p>
           </div>
           <div className="rounded-lg shadow-lg bg-gray-100 p-3 mt-4">
@@ -49,8 +49,8 @@ const ClassLook = () => {
               Supportive Environment
             </h3>
             <p>
-              Our classes provide a supportive environment where kids feel
-              comfortable to express themselves and learn.
+              Our classes foster a nurturing environment where kids feel
+              confident to express themselves and grow.
             </p>
           </div>
         </div>
