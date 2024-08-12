@@ -13,7 +13,7 @@ const TrySession = () => {
       </div>
       {/* <div className="space-y-4 flex bg-[#eadff5]"> */}
 
-      <div className="grid grid-cols-1 md:grid-cols-3 p-2 bg-[#eadff5]">
+      <div className="grid grid-cols-1 md:grid-cols-3 p-2 py-4 bg-[#eadff5]">
         <div className="flex items-center space-x-4">
           <GoHome className="text-pink-500 text-2xl" />
           <div className="">

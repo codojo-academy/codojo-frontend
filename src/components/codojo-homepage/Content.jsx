@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router-dom";
+
 import downloadImage from "../images/download.png";
 import { GoHome } from "react-icons/go";
-import { useNavigate } from "react-router-dom";
+import { LuUser2 } from "react-icons/lu";
+import { BsStars } from "react-icons/bs";
+import { RiCalendarScheduleLine } from "react-icons/ri";
 
 const Content = () => {
   const navigate = useNavigate();
@@ -21,20 +25,20 @@ const Content = () => {
         </h3>
         <ul className="space-y-2">
           <li className="flex items-center gap-2 text-lg">
-            <GoHome style={{ color: "#E91E63", fontSize: "24px" }} />
-            Learn from the comfort of home
+            <GoHome className="text-2xl text-[#E91E63]" />
+            Learn comfortably from home
           </li>
           <li className="flex items-center gap-2 text-lg">
-            <GoHome style={{ color: "#E91E63", fontSize: "24px" }} />
-            Dedicated personal expert mentor
+            <LuUser2 className="text-2xl text-[#E91E63]" />
+            Guided by a dedicated expert mentor
           </li>
           <li className="flex items-center gap-2 text-lg">
-            <GoHome style={{ color: "#E91E63", fontSize: "24px" }} />
-            AI-driven adaptive learning journey
+            <BsStars className="text-2xl text-[#E91E63]" />
+            AI-powered personalized learning experience
           </li>
           <li className="flex items-center gap-2 text-lg">
-            <GoHome style={{ color: "#E91E63", fontSize: "24px" }} />
-            Schedule classes anytime from anywhere
+            <RiCalendarScheduleLine className="text-2xl text-[#E91E63]" />
+            Flexible class scheduling from any location
           </li>
         </ul>
         <button
