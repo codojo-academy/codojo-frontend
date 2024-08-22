@@ -3,7 +3,7 @@ import { GoHome } from "react-icons/go";
 const TrySession = () => {
   return (
     <>
-      <div className="bg-[#673AB7] p-12">
+      <div className="bg-[#9a71e3] p-12">
         <h1 className="text-3xl text-white text-center mb-10">
           Want to try a session before starting?
         </h1>

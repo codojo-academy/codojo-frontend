@@ -17,8 +17,8 @@ const Content = () => {
     <div className="flex flex-col md:flex-row gap-10 items-center min-h-screen p-6 bg-gray-100">
       <div className="p-10 md:w-1/2 space-y-6">
         <h1 className="text-[#673AB7] text-4xl font-semibold leading-tight">
-          Creating Future Tech <br />
-          Leaders
+          <span className="text-[#E91E63]">Creating the Tech</span> <br></br>{" "}
+          Leaders of Tomorrow
         </h1>
         <h3 className="text-[#E91E63] text-xl">
           Live online 1:1 interactive classes for kids aged 5-17
