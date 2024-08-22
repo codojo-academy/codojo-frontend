@@ -37,28 +37,23 @@ export default function Nav() {
         />
         <NavbarBrand>
           {/* <AcmeLogo /> */}
-          <p className="font-bold text-inherit">ACME</p>
+          <p className="font-bold text-inherit">CODOJO</p>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="sm:flex gap-8 font-bold" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="/">
+          <Link className="text-gray-700" href="/">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link
-            href="#"
-            aria-current="page"
-            className="lg:flex"
-            color="foreground"
-          >
+          <Link href="#" aria-current="page" className="lg:flex text-gray-700">
             Courses
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link className="text-gray-700" href="#">
             About Us
           </Link>
         </NavbarItem>

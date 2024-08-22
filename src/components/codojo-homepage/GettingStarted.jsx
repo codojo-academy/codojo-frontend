@@ -3,7 +3,7 @@ import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 const GettingStarted = () => {
   return (
     <div className="p-8 bg-gray-100 min-h-screen">
-      <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">
+      <h1 className="text-3xl font-bold text-center mb-6 text-[#673AB7]">
         Getting started is super easy
       </h1>
       <p className="text-center text-gray-600 mb-10 font-medium">
@@ -22,7 +22,7 @@ const GettingStarted = () => {
             <div className="flex items-center space-x-4">
               <span className="text-gray-500 text-6xl">1</span>
               <span className="text-sm text-gray-500">
-                <h4 className="font-bold text-base text-gray-800">
+                <h4 className="font-bold text-base text-gray-700">
                   Select course
                 </h4>
                 Choose a course based on <br></br> your kid’s age/grade
@@ -43,7 +43,7 @@ const GettingStarted = () => {
             <div className="flex items-center space-x-4">
               <span className="text-gray-500 text-6xl">2</span>
               <span className="text-sm text-gray-500">
-                <h4 className="font-bold text-base text-gray-800">
+                <h4 className="font-bold text-base text-gray-700">
                   Book the FREE trial class
                 </h4>
                 Choose a mentor of choice & <br></br> your preferred time slot
@@ -64,7 +64,7 @@ const GettingStarted = () => {
             <div className="flex items-center space-x-4">
               <span className="text-gray-500 text-6xl">3</span>
               <span className="text-sm text-gray-500">
-                <h4 className="font-bold text-base text-gray-800">
+                <h4 className="font-bold text-base text-gray-700">
                   Enroll for the course
                 </h4>
                 If you like the demo class,<br></br> begin your kid’s journey!

@@ -1,14 +1,20 @@
-import { GoHome } from "react-icons/go";
+import { IoShieldCheckmarkSharp } from "react-icons/io5";
+import { PiUsersThreeFill } from "react-icons/pi";
+import { AiFillThunderbolt } from "react-icons/ai";
+import { PiDiscDuotone } from "react-icons/pi";
+import { RiSimCardFill } from "react-icons/ri";
+import { PiBooksDuotone } from "react-icons/pi";
 
 const SetsUpApart = () => {
   return (
     <div className="p-8 bg-gray-100 min-h-screen mt-8 rounded-lg py-10 ">
-      <h1 className="text-4xl font-bold mb-8 text-center">
+      <h1 className="text-4xl font-bold mb-8 text-center text-[#673AB7]">
         What really sets us apart.
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="flex  p-4 bg-white shadow-lg rounded-lg max-w-md mx-auto">
-          <GoHome className="text-pink-500 text-4xl mr-4" />
+        <div className="flex  items-center p-4 bg-white shadow-lg rounded-lg max-w-md mx-auto">
+          <PiBooksDuotone className="text-pink-500 text-4xl mr-4" />
+
           <div>
             <h4 className="text-xl font-semibold">Quality of curriculum</h4>
             <p>
@@ -18,7 +24,7 @@ const SetsUpApart = () => {
           </div>
         </div>
         <div className="flex items-center p-4 bg-white shadow-lg rounded-lg max-w-md mx-auto">
-          <GoHome className="text-pink-500 text-4xl mr-4" />
+          <IoShieldCheckmarkSharp className="text-pink-500 text-4xl mr-4" />
           <div>
             <h4 className="text-xl font-semibold">Quality of teachers</h4>
             <p>
@@ -27,7 +33,7 @@ const SetsUpApart = () => {
           </div>
         </div>
         <div className="flex items-center p-4 bg-white shadow-lg rounded-lg max-w-md mx-auto">
-          <GoHome className="text-pink-500 text-4xl mr-4" />
+          <AiFillThunderbolt className="text-pink-500 text-4xl mr-4" />
           <div>
             <h4 className="text-xl font-semibold">
               Adaptive AI based learning
@@ -38,7 +44,8 @@ const SetsUpApart = () => {
           </div>
         </div>
         <div className="flex items-center p-4 bg-white shadow-lg rounded-lg max-w-md mx-auto">
-          <GoHome className="text-pink-500 text-4xl mr-4" />
+          <RiSimCardFill className="text-pink-500 text-4xl mr-4" />
+
           <div>
             <h4 className="text-xl font-semibold">Hands-on learning</h4>
             <p>
@@ -48,7 +55,7 @@ const SetsUpApart = () => {
           </div>
         </div>
         <div className="flex items-center p-4 bg-white shadow-lg rounded-lg max-w-md mx-auto">
-          <GoHome className="text-pink-500 text-4xl mr-4" />
+          <PiDiscDuotone className="text-pink-500 text-4xl mr-4" />
           <div>
             <h4 className="text-xl font-semibold">Progress monitoring</h4>
             <p>
@@ -57,7 +64,7 @@ const SetsUpApart = () => {
           </div>
         </div>
         <div className="flex items-center p-4 bg-white shadow-lg rounded-lg max-w-md mx-auto">
-          <GoHome className="text-pink-500 text-6xl mr-4" />
+          <PiUsersThreeFill className="text-pink-500 text-4xl mr-4" />
           <div>
             <h4 className="text-xl font-semibold">
               In-class & outside class engagement
