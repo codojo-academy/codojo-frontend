@@ -125,12 +125,15 @@
 // export default BookADemo;
 
 import { useState } from "react";
-
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 const BookADemo = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [countryCode, setCountryCode] = useState("+1");
   const [errors, setErrors] = useState({});
+  const handleChange = (value) => {
+    setPhone(value);
+  };
 
   const validate = () => {
     const errors = {};
@@ -158,16 +161,34 @@ const BookADemo = () => {
     e.preventDefault();
     if (validate()) {
       alert("Form submitted successfully!");
-      // Handle form submission (e.g., send to API)
+      // Handle form submission
     }
   };
 
+  // const style = {
+  //   width: "50%",
+  //   border: "1px solid #D1D5DB", // border-gray-300
+  //   borderRadius: "0.375rem", // rounded
+  //   boxShadow: "0px 1px 2px rgba(0, 0, 0, 0.05)", // shadow-sm
+  //   paddingTop: "0.5rem", // py-2
+  //   paddingBottom: "0.5rem", // py-2
+  //   paddingLeft: "0.75rem", // px-3
+  //   paddingRight: "0.75rem", // px-3
+  //   outline: "none", // focus:outline-none
+  //   transition: "box-shadow 0.2s", // smooth transition for shadow on focus
+  // };
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-md mx-auto p-4 bg-white shadow-md rounded"
+      className="max-w-md mx-auto p-4 bg-[#fafafa] shadow-md rounded mt-4"
     >
-      <div className="mb-4">
+      <div className="m-4">
+        <h1 className="text-gray-800 font-bold p-4 text-xl text-center">
+          Book your FREE trial <br></br> class in <span>just 1 minute!</span>
+        </h1>
+        <p className="text-center">
+          Equip your kids with education for tomorrow!!
+        </p>
         <label className="block text-gray-700 font-bold mb-2">
           Parent's Email Address
         </label>
@@ -184,27 +205,28 @@ const BookADemo = () => {
         )}
       </div>
 
-      <div className="mb-4">
+      <div className="m-4">
         <label className="block text-gray-700 font-bold mb-2">
           Parent's Phone Number
         </label>
-        <div className="flex">
-          <select
-            value={countryCode}
-            onChange={(e) => setCountryCode(e.target.value)}
-            className="shadow appearance-none border border-gray-300 rounded-l py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          >
-            <option value="+1">+1 (US)</option>
-            <option value="+44">+44 (UK)</option>
-            <option value="+91">+91 (India)</option>
-          </select>
-          <input
-            type="tel"
-            className={`shadow appearance-none border ${
-              errors.phone ? "border-red-500" : "border-gray-300"
-            } rounded-r w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
+        <div>
+          <PhoneInput
+            containerClass="w-[200%]"
+            inputClass="border border-gray-300 rounded shadow-sm py-2 px-3 focus:outline-none focus:shadow-outline"
+            inputStyle={{
+              width: "50%",
+            }}
+            country={"us"}
             value={phone}
-            onChange={(e) => setPhone(e.target.value)}
+            onChange={handleChange}
+            placeholder="Enter phone number"
+            inputProps={{
+              name: "phone",
+              required: true,
+              autoFocus: true,
+            }}
+            disableDropdown={false}
+            countryCodeEditable={false}
           />
         </div>
         {errors.phone && (
@@ -212,7 +234,7 @@ const BookADemo = () => {
         )}
       </div>
 
-      <div className="mb-4">
+      <div className="m-4">
         <label className="block text-gray-700 font-bold mb-2">
           Course Preference
         </label>
