@@ -11,6 +11,8 @@ const FirstPage = ({ onNextPage }) => {
   const [grade, setGrade] = useState("");
   const [isAdult, setIsAdult] = useState(true);
   const [agreeTerms, setAgreeTerms] = useState(true);
+  const [yourName, setYourName] = useState("");
+  const [childName, setChildName] = useState("");
   const [errors, setErrors] = useState({});
 
   const handleChange = (value) => {
@@ -21,6 +23,14 @@ const FirstPage = ({ onNextPage }) => {
     const errors = {};
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phoneRegex = /^\+?[0-9]{10,14}$/;
+
+    if (!yourName) {
+      errors.yourName = "Your name is required";
+    }
+
+    if (!childName) {
+      errors.childName = "Child's name is required";
+    }
 
     if (!email) {
       errors.email = "Email is required";
@@ -71,6 +81,39 @@ const FirstPage = ({ onNextPage }) => {
         <p className="text-center">
           Equip your kids with education for tomorrow!!
         </p>
+
+        <label className="block text-gray-700 font-bold mb-2">Your Name</label>
+        <input
+          type="text"
+          className={`shadow appearance-none border ${
+            errors.yourName ? "border-red-500" : "border-gray-300"
+          } rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
+          value={yourName}
+          onChange={(e) => setYourName(e.target.value)}
+        />
+        {errors.yourName && (
+          <p className="text-red-500 text-xs italic">{errors.yourName}</p>
+        )}
+      </div>
+
+      <div className="m-4">
+        <label className="block text-gray-700 font-bold mb-2">
+          Child's Name
+        </label>
+        <input
+          type="text"
+          className={`shadow appearance-none border ${
+            errors.childName ? "border-red-500" : "border-gray-300"
+          } rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
+          value={childName}
+          onChange={(e) => setChildName(e.target.value)}
+        />
+        {errors.childName && (
+          <p className="text-red-500 text-xs italic">{errors.childName}</p>
+        )}
+      </div>
+
+      <div className="m-4">
         <label className="block text-gray-700 font-bold mb-2">
           Parent's Email Address
         </label>
