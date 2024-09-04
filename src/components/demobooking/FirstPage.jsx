@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
 
 import { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
-const FirstPage = () => {
+const FirstPage = ({ onNextPage }) => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [grade, setGrade] = useState("");
@@ -54,8 +55,7 @@ const FirstPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      alert("Form submitted successfully!");
-      // Handle form submission
+      onNextPage(); // Call this to navigate to the second page
     }
   };
 
@@ -154,6 +154,9 @@ const FirstPage = () => {
           Course Preference
         </label>
         <select className="shadow appearance-none border border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+          <option value="" disabled>
+            Select Course
+          </option>
           <option value="math">Web Dev</option>
           <option value="science">Scratch</option>
           <option value="literature">DSA</option>
