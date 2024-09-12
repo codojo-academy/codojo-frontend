@@ -9,7 +9,7 @@ const ClassLook = () => {
       <div className="flex flex-col md:flex-row gap-10 w-full max-w-6xl">
         <div className="p-4 md:w-1/3 flex flex-col justify-center">
           <div className="rounded-lg shadow-lg  bg-gray-100 p-3">
-            <h3 className="text-lg font-semibold mb-2">
+            <h3 className="text-lg font-semibold mb-2 text-[#673AB7] ">
               Engaging and enjoyable
             </h3>
             <p className="mb-4 ">
@@ -18,7 +18,7 @@ const ClassLook = () => {
             </p>
           </div>
           <div className="rounded-lg shadow-lg bg-gray-100 p-3 mt-4">
-            <h3 className="text-lg font-semibold mb-2">
+            <h3 className="text-lg font-semibold mb-2 text-[#673AB7] ">
               Interactive Learning Experience
             </h3>
             <p>
@@ -36,7 +36,7 @@ const ClassLook = () => {
         </div>
         <div className="text-grey p-4 md:w-1/3 flex flex-col justify-center">
           <div className="rounded-lg shadow-lg bg-gray-100 p-3">
-            <h3 className="text-lg font-semibold mb-2">
+            <h3 className="text-lg font-semibold mb-2 text-[#673AB7] ">
               Creative Teaching Approaches
             </h3>
             <p className="mb-4">
@@ -45,7 +45,7 @@ const ClassLook = () => {
             </p>
           </div>
           <div className="rounded-lg shadow-lg bg-gray-100 p-3 mt-4">
-            <h3 className="text-lg font-semibold mb-2">
+            <h3 className="text-lg font-semibold mb-2 text-[#673AB7]">
               Supportive Environment
             </h3>
             <p>

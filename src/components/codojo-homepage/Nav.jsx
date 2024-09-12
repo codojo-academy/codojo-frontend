@@ -37,7 +37,9 @@ export default function Nav() {
         />
         <NavbarBrand>
           {/* <AcmeLogo /> */}
-          <p className="font-bold text-inherit">CODOJO</p>
+          <Link className="font-bold text-inherit" href="/">
+            CODOJO
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
