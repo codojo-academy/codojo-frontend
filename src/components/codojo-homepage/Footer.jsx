@@ -1,4 +1,6 @@
-import { GoHome } from "react-icons/go";
+import { FaYoutube } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -9,14 +11,14 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
           <div className="flex flex-col space-x-4">
             <h1 className="text-lg font-bold pl-4">FOLLOW CODOJO</h1>
-            <div className="flex">
+            <div className="flex gap-3">
               <a
                 href="https://www.linkedin.com/feed/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-pink-500 hover:text-pink-400"
               >
-                <GoHome className="text-2xl" />
+                <FaInstagram className="text-2xl" />
               </a>
               <a
                 href="https://www.linkedin.com/feed/"
@@ -24,7 +26,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-pink-500 hover:text-pink-400"
               >
-                <GoHome className="text-2xl" />
+                <FaYoutube className="text-2xl" />
               </a>
               <a
                 href="https://www.linkedin.com/feed/"
@@ -32,7 +34,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-pink-500 hover:text-pink-400"
               >
-                <GoHome className="text-2xl" />
+                <FaLinkedin className="text-2xl" />
               </a>
             </div>
           </div>

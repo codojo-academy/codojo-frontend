@@ -28,7 +28,7 @@ const TrySession = () => {
           <div>
             <p>Call us at</p>
             <a href="" className="text-blue-500">
-              example@gmail.com
+              1234
             </a>
           </div>
         </div>

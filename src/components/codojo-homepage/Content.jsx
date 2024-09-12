@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import downloadImage from "../images/download.png";
+import downloadImage from "../images/child.png";
 import { GoHome } from "react-icons/go";
 import { LuUser2 } from "react-icons/lu";
 import { BsStars } from "react-icons/bs";
