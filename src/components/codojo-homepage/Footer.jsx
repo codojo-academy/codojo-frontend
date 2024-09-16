@@ -46,18 +46,18 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Courses</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="#" className="text-black-300 hover:text-white">
+                <Link to="#" className="text-black-300 hover:text-pink-500">
                   Web Development
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-black-300 hover:text-white">
-                  Data Science
+                <Link to="#" className="text-black-300 hover:text-pink-500">
+                  Scratch Coding
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-black-300 hover:text-white">
-                  AI & ML
+                <Link to="#" className="text-black-300 hover:text-pink-500">
+                  DSA
                 </Link>
               </li>
             </ul>
@@ -66,40 +66,40 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="#" className="text-black-300 hover:text-white">
+                <Link to="#" className="text-black-300 hover:text-pink-500">
                   About Us
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="#" className="text-black-300 hover:text-white">
-                  Careers
+                  
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link to="#" className="text-black-300 hover:text-white">
                   Blog
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="#" className="text-black-300 hover:text-white">
+                <Link to="#" className="text-black-300 hover:text-pink-500">
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-black-300 hover:text-white">
-                  FAQs
+                <Link to="#" className="text-black-300 hover:text-pink-500">
+                  Login
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="#" className="text-balck-300 hover:text-white">
                   Support
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

@@ -19,8 +19,8 @@ const TrialClassBanner = () => {
           alt="Class Preview"
           className="w-full lg:w-1/2 h-64 lg:h-auto object-cover"
         />
-        <div className="p-6 lg:p-10 w-full lg:w-1/2 text-center lg:text-left">
-          <h4 className="text-2xl font-semibold text-gray-800 mb-4">
+        <div className="p-6 lg:p-10 w-full lg:w-[42%] text-center lg:text-left bg-[#FDECF2]  rounded">
+          <h4 className="text-2xl font-semibold mb-4 text-[#673AB7]">
             Try a class for free
           </h4>
           <p className="text-gray-600 mb-6">

@@ -16,7 +16,9 @@ const SetsUpApart = () => {
           <PiBooksDuotone className="text-pink-500 text-4xl mr-4" />
 
           <div>
-            <h4 className="text-xl font-semibold">Quality of curriculum</h4>
+            <h4 className="text-xl font-semibold text-[#673AB7]">
+              Quality of curriculum
+            </h4>
             <p>
               Personalized curriculum focused on mastery through depth and
               practice
@@ -26,7 +28,9 @@ const SetsUpApart = () => {
         <div className="flex items-center p-4 bg-white shadow-lg rounded-lg max-w-md mx-auto">
           <IoShieldCheckmarkSharp className="text-pink-500 text-4xl mr-4" />
           <div>
-            <h4 className="text-xl font-semibold">Quality of teachers</h4>
+            <h4 className="text-xl font-semibold text-[#673AB7]">
+              Quality of teachers
+            </h4>
             <p>
               Highly passionate and qualified teachers with relevant background
             </p>
@@ -35,7 +39,7 @@ const SetsUpApart = () => {
         <div className="flex items-center p-4 bg-white shadow-lg rounded-lg max-w-md mx-auto">
           <AiFillThunderbolt className="text-pink-500 text-4xl mr-4" />
           <div>
-            <h4 className="text-xl font-semibold">
+            <h4 className="text-xl font-semibold text-[#673AB7]">
               Adaptive AI based learning
             </h4>
             <p>
@@ -47,7 +51,9 @@ const SetsUpApart = () => {
           <RiSimCardFill className="text-pink-500 text-4xl mr-4" />
 
           <div>
-            <h4 className="text-xl font-semibold">Hands-on learning</h4>
+            <h4 className="text-xl font-semibold text-[#673AB7]">
+              Hands-on learning
+            </h4>
             <p>
               Rigorous hands-on practice enabled through 1k+ of exercises &
               worksheets
@@ -57,7 +63,9 @@ const SetsUpApart = () => {
         <div className="flex items-center p-4 bg-white shadow-lg rounded-lg max-w-md mx-auto">
           <PiDiscDuotone className="text-pink-500 text-4xl mr-4" />
           <div>
-            <h4 className="text-xl font-semibold">Progress monitoring</h4>
+            <h4 className="text-xl font-semibold text-[#673AB7]">
+              Progress monitoring
+            </h4>
             <p>
               Highly detailed personalized progress report and class engagement
             </p>
@@ -66,7 +74,7 @@ const SetsUpApart = () => {
         <div className="flex items-center p-4 bg-white shadow-lg rounded-lg max-w-md mx-auto">
           <PiUsersThreeFill className="text-pink-500 text-4xl mr-4" />
           <div>
-            <h4 className="text-xl font-semibold">
+            <h4 className="text-xl font-semibold text-[#673AB7]">
               In-class & outside class engagement
             </h4>
             <p>

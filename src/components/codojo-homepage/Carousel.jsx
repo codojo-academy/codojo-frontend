@@ -8,21 +8,41 @@ const Carousel = () => {
   const courses = [
     {
       title: "Web Development",
-      description: "Description for Course 1",
+      description:
+        "Build full stack advanced, interactive and functional websites",
       image: downloadImage,
-      features: ["HTML", "CSS", "JavaScript"],
+      features: [
+        "HTML and CSS",
+        "Basic and advanced Javascript",
+        "ReactJS",
+        "Backend development",
+        "Database management",
+      ],
     },
     {
-      title: "Course 2",
-      description: "Description for Course 2",
+      title: "Scratch Coding",
+      description:
+        "Create interactive animations and complex games using MIT Scratch",
       image: oneOneon,
-      features: ["HTML", "CSS", "JavaScript"],
+      features: [
+        "Intro to block based coding",
+        "Logic and control flows",
+        "Multi level game design",
+        "Game physics",
+        "Advanced platformer games",
+      ],
     },
     {
-      title: "Course 3",
-      description: "Description for Course 3",
+      title: "DSA",
+      description: "Learn about fundamental Data Structures and Algorithms",
       image: downloadImage,
-      features: ["HTML", "CSS", "JavaScript"],
+      features: [
+        "Understanding Algorithms",
+        "Multi-Level Problem Solving",
+        "Problem-solving Techniques",
+        "Real-life Applications of DSA",
+        "Dynamic Programming",
+      ],
     },
     {
       title: "Course 4",
@@ -86,11 +106,11 @@ const Carousel = () => {
                             className="w-full h-48 object-cover rounded-md mb-4"
                             alt={`Course ${index}`}
                           />
-                          <h3 className="text-lg font-bold mb-2">
+                          <h3 className="text-lg font-bold mb-2 text-[#673AB7]">
                             {course.title}
                           </h3>
                           <p className="text-gray-700">{course.description}</p>
-                          <ul className="list-disc pl-5">
+                          <ul className="list-disc pl-5 p-1">
                             {course.features.map((feature, idx) => (
                               <li key={idx} className="text-gray-600">
                                 {feature}
