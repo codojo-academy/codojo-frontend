@@ -45,10 +45,17 @@ const Carousel = () => {
       ],
     },
     {
-      title: "Course 4",
-      description: "Description for Course 4",
+      title: "App Development",
+      description:
+        "Build responsive and interactive industry-grade iOS & Android apps",
       image: oneOneon,
-      features: ["HTML", "CSS", "JavaScript"],
+      features: [
+        "App layouts & core components",
+        "Responsive design",
+        "App deployment",
+        "Navigation & state management",
+        "Network request & data mgmt",
+      ],
     },
     {
       title: "Course 5",
