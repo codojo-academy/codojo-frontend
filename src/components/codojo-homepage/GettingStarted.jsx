@@ -1,4 +1,6 @@
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
+import selectCourse from "../images/selectcourse.png";
+import bookTrial from "../images/booktrial.png";
 
 const GettingStarted = () => {
   return (
@@ -15,7 +17,7 @@ const GettingStarted = () => {
           <Image
             alt="Card background"
             className="object-cover rounded-t-xl"
-            src="https://nextui.org/images/hero-card-complete.jpeg"
+            src={selectCourse}
             width={270}
           />
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
@@ -36,7 +38,7 @@ const GettingStarted = () => {
           <Image
             alt="Card background"
             className="object-cover rounded-t-xl"
-            src="https://nextui.org/images/hero-card-complete.jpeg"
+            src={bookTrial}
             width={270}
           />
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
