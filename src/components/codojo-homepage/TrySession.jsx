@@ -32,7 +32,10 @@ const TrySession = () => {
           <IoMailOutline className="text-[#673AB7] text-4xl rounded-full bg-[#d8bfd8] p-1" />
           <div className="">
             <p className="font-bold">Email us at</p>
-            <a href="codojo05@gmail.com" className="hover:text-[#673AB7]">
+            <a
+              href="mailto:codojo05@gmail.com"
+              className="hover:text-[#673AB7]"
+            >
               codojo05@gmail.com
             </a>
           </div>
@@ -50,7 +53,7 @@ const TrySession = () => {
           <LuCalendarClock className="text-[#673AB7] text-4xl rounded-full bg-[#d8bfd8] p-1" />
           <div>
             <p className="font-bold">Book a free trail</p>
-            <a href="" className="hover:text-[#673AB7]">
+            <a href="/book-a-demo" className="hover:text-[#673AB7]">
               Click here
             </a>
           </div>
