@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import downloadImage from "../images/download.png";
+import downloadImage from "../images/tryaclass.jpeg";
 
 const TrialClassBanner = () => {
   const navigate = useNavigate();
@@ -13,11 +13,11 @@ const TrialClassBanner = () => {
       <h1 className="text-4xl text-[#673AB7] font-bold text-center mb-10">
         Want to check out how the classes are conducted?
       </h1>
-      <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
+      <div className="flex flex-col lg:flex-row gap-8 items-center bg-white rounded-lg shadow-lg overflow-hidden">
         <img
           src={downloadImage}
           alt="Class Preview"
-          className="w-full lg:w-1/2 h-64 lg:h-auto object-cover"
+          className="w-full lg:w-1/2 h-96 object-cover rounded"
         />
         <div className="p-6 lg:p-10 w-full lg:w-[42%] text-center lg:text-left bg-[#FDECF2]  rounded">
           <h4 className="text-2xl font-semibold mb-4 text-[#673AB7]">

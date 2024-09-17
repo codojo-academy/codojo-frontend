@@ -6,11 +6,13 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-gray-100 text-black py-8 p-8">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0">
         {/* Social Media Links */}
         <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
           <div className="flex flex-col space-x-4">
-            <h1 className="text-lg font-bold pl-4">FOLLOW CODOJO</h1>
+            <h1 className="text-lg font-bold pl-4 text-gray-700">
+              FOLLOW CODOJO
+            </h1>
             <div className="flex gap-3">
               <a
                 href="https://www.linkedin.com/feed/"
@@ -18,7 +20,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-pink-500 hover:text-pink-400"
               >
-                <FaInstagram className="text-2xl" />
+                <FaInstagram className="text-4xl bg-[#ffe0eb] p-1 rounded" />
               </a>
               <a
                 href="https://www.linkedin.com/feed/"
@@ -26,7 +28,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-pink-500 hover:text-pink-400"
               >
-                <FaYoutube className="text-2xl" />
+                <FaYoutube className="text-4xl bg-[#ffe0eb] p-1 rounded" />
               </a>
               <a
                 href="https://www.linkedin.com/feed/"
@@ -34,7 +36,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-pink-500 hover:text-pink-400"
               >
-                <FaLinkedin className="text-2xl" />
+                <FaLinkedin className="text-4xl bg-[#ffe0eb] p-1 rounded" />
               </a>
             </div>
           </div>
