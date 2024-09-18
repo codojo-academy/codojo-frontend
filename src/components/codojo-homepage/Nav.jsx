@@ -76,9 +76,9 @@ export default function Nav() {
       <NavbarContent justify="end">
         {!isLoggedIn ? (
           <NavbarItem>
-            <Button as={Link} color="primary" href="#" variant="flat">
+            <Link color="primary" href="/login" variant="flat">
               Login
-            </Button>
+            </Link>
           </NavbarItem>
         ) : (
           <NavbarItem>

@@ -1,6 +1,7 @@
 import Nav from "./components/codojo-homepage/Nav";
 // import Content from "./components/Content";
 import BookADemo from "./pages/BookADemo";
+import Login from "./pages/Login";
 import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/book-a-demo" element={<BookADemo />} />
+        <Route path="/login" element={<Login />} />
         <Route />
       </Routes>
     </main>
