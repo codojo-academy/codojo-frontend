@@ -14,7 +14,7 @@ import { useState } from "react";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const [isLoggedIn, setIsLoggedIn] = useState(true); // State for login status
   const menuItems = [
     "Profile",
     "Dashboard",
@@ -61,14 +61,38 @@ export default function Nav() {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        {/* <NavbarItem className=" lg:flex">
-            <Link href="#">Login</Link>
-          </NavbarItem> */}
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Login
-          </Button>
-        </NavbarItem>
+        {isLoggedIn && (
+          <NavbarItem>
+            <Link
+              href="#"
+              aria-current="page"
+              className="lg:flex text-gray-700"
+            >
+              Student Portal
+            </Link>
+          </NavbarItem>
+        )}
+      </NavbarContent>
+      <NavbarContent justify="end">
+        {!isLoggedIn ? (
+          <NavbarItem>
+            <Button as={Link} color="primary" href="#" variant="flat">
+              Login
+            </Button>
+          </NavbarItem>
+        ) : (
+          <NavbarItem>
+            <Button
+              as={Link}
+              color="primary"
+              href="#"
+              variant="flat"
+              onClick={() => setIsLoggedIn(false)}
+            >
+              Logout
+            </Button>
+          </NavbarItem>
+        )}
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
