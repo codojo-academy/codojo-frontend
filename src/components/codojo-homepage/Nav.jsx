@@ -64,7 +64,7 @@ export default function Nav() {
         {isLoggedIn && (
           <NavbarItem>
             <Link
-              href="#"
+              href="/student-portal"
               aria-current="page"
               className="lg:flex text-gray-700"
             >
