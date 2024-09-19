@@ -66,7 +66,7 @@ export default function Nav() {
             <Link
               href="/student-portal"
               aria-current="page"
-              className="lg:flex text-gray-700"
+              className="lg:flex bg-[#F8F0FF] hover:bg-[#6636CC] hover:text-white text-[#673AB7] py-1.5 px-4 rounded"
             >
               Student Portal
             </Link>
@@ -76,7 +76,11 @@ export default function Nav() {
       <NavbarContent justify="end">
         {!isLoggedIn ? (
           <NavbarItem>
-            <Link color="primary" href="/login" variant="flat">
+            <Link
+              href="/login"
+              variant="flat"
+              className="bg-[#7047c9] hover:bg-[#957dbd] text-white py-1.5 px-4 rounded"
+            >
               Login
             </Link>
           </NavbarItem>
@@ -84,7 +88,7 @@ export default function Nav() {
           <NavbarItem>
             <Button
               as={Link}
-              color="primary"
+              className="bg-[#7047c9] hover:bg-[#957dbd] text-white py-1.5 px-4 rounded"
               href="#"
               variant="flat"
               onClick={() => setIsLoggedIn(false)}
