@@ -1,6 +1,12 @@
 import { useState } from "react";
+// import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  //   const navigate = useNavigate();
+  //
+  //   const goToStudentPortal = () => {
+  //     navigate("/student-portal");
+  //   };
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -70,6 +76,7 @@ const Login = () => {
         </div>
         <br />
         <button
+          // onClick={goToStudentPortal}
           type="submit"
           className="w-3/5 bg-[#d43a6e] hover:bg-[#E91E63] font-semibold text-white font-normal text-lg py-3 transition-none uppercase rounded"
         >
