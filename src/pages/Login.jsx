@@ -42,7 +42,10 @@ const Login = () => {
           />
         </div>
         <br />
-        <button className="w-3/5 bg-[#d43a6e] hover:bg-[#E91E63] font-semibold text-white font-normal text-lg py-3 transition-none uppercase rounded">
+        <button
+          type="submit"
+          className="w-3/5 bg-[#d43a6e] hover:bg-[#E91E63] font-semibold text-white font-normal text-lg py-3 transition-none uppercase rounded"
+        >
           Log in
         </button>
       </form>
