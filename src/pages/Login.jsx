@@ -6,15 +6,42 @@ const Login = () => {
     password: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = async (e) => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+    console.log("Form submitted with: ", form);
+
+    try {
+      const response = await fetch("https://reqres.in/api/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: form.email,
+          password: form.password,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Error: ${response.status} - ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      console.log("Response:", data); // Log the successful response data
+    } catch (error) {
+      console.error("Error during the login process:", error); // Catch and log any errors
+    }
   };
 
   return (
     <div className="mt-[-1px] w-full h-screen flex items-center justify-center bg-gray-100">
       <form
-        onSubmit={(e) => e.preventDefault()}
+        onSubmit={handleSubmit}
         autoComplete="off"
         className="flex flex-col items-center justify-around bg-base-300 pt-2 rounded overflow-hidden mx-auto my-0 w-2/3 sm:w-1/2 2xl:w-1/3 transition-all"
       >
