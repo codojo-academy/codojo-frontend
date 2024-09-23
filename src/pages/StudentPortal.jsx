@@ -1,5 +1,7 @@
+import ClassJoin from "../components/student-portal/ClassJoin";
+
 const StudentPortal = () => {
-  return;
+  return <ClassJoin />;
 };
 
 export default StudentPortal;
