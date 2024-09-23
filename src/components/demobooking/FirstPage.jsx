@@ -96,7 +96,7 @@ const FirstPage = ({ onNextPage }) => {
           <div className="w-[48%]">
             <div className="m-4">
               <label className="block text-gray-700 font-bold mb-2">
-                Your Name
+                Your Name*
               </label>
               <input
                 placeholder="Your Name"
@@ -114,7 +114,7 @@ const FirstPage = ({ onNextPage }) => {
 
             <div className="m-4">
               <label className="block text-gray-700 font-bold mb-2">
-                Child's Name
+                Child's Name*
               </label>
               <input
                 placeholder="Child's Name"
@@ -134,7 +134,7 @@ const FirstPage = ({ onNextPage }) => {
 
             <div className="m-4">
               <label className="block text-gray-700 font-bold mb-2">
-                Parent's Email Address
+                Parent's Email Address*
               </label>
               <input
                 placeholder="Enter Parent's email ID"
@@ -155,7 +155,7 @@ const FirstPage = ({ onNextPage }) => {
           <div className="w-[48%]">
             <div className="m-4">
               <label className="block text-gray-700 font-bold mb-2">
-                Parent's Phone Number
+                Parent's Phone Number*
               </label>
               <PhoneInput
                 inputStyle={{
@@ -180,7 +180,7 @@ const FirstPage = ({ onNextPage }) => {
 
             <div className="m-4">
               <label className="block text-gray-700 font-bold mb-2">
-                Student's Grade
+                Student's Grade*
               </label>
               <select
                 className={`shadow appearance-none border ${
@@ -213,7 +213,7 @@ const FirstPage = ({ onNextPage }) => {
 
             <div className="m-4">
               <label className="block text-gray-700 font-bold mb-2">
-                Course Preference
+                Course Preference*
               </label>
               <select
                 className={`shadow appearance-none border ${
