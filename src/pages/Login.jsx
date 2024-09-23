@@ -1,12 +1,12 @@
 import { useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  //   const navigate = useNavigate();
-  //
-  //   const goToStudentPortal = () => {
-  //     navigate("/student-portal");
-  //   };
+  const navigate = useNavigate();
+
+  const goToStudentPortal = () => {
+    navigate("/student-portal");
+  };
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -39,6 +39,14 @@ const Login = () => {
 
       const data = await response.json();
       console.log("Response:", data); // Log the successful response data
+
+      if (data.token) {
+        // If login is successful, navigate to the student portal
+        goToStudentPortal();
+      } else {
+        console.error("Invalid credentials");
+        // display an error message to the user here
+      }
     } catch (error) {
       console.error("Error during the login process:", error); // Catch and log any errors
     }
@@ -76,7 +84,6 @@ const Login = () => {
         </div>
         <br />
         <button
-          // onClick={goToStudentPortal}
           type="submit"
           className="w-3/5 bg-[#d43a6e] hover:bg-[#E91E63] font-semibold text-white font-normal text-lg py-3 transition-none uppercase rounded"
         >

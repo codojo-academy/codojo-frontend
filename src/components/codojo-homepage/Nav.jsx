@@ -67,6 +67,7 @@ export default function Nav() {
               href="/student-portal"
               aria-current="page"
               className="lg:flex bg-[#F8F0FF] hover:bg-[#6636CC] hover:text-white text-[#673AB7] py-1.5 px-4 rounded"
+              target="_blank"
             >
               Student Portal
             </Link>
