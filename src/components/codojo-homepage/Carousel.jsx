@@ -1,6 +1,8 @@
 import { useState } from "react";
 import downloadImage from "../images/download.png";
 import oneOneon from "../images/oneonone.jpg";
+import webDev from "../images/WD.jpeg";
+import scratch from "../images/scratch.png";
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -10,7 +12,7 @@ const Carousel = () => {
       title: "Web Development",
       description:
         "Build full stack advanced, interactive and functional websites",
-      image: downloadImage,
+      image: webDev,
       features: [
         "HTML and CSS",
         "Basic and advanced Javascript",
@@ -23,7 +25,7 @@ const Carousel = () => {
       title: "Scratch Coding",
       description:
         "Create interactive animations and complex games using MIT Scratch",
-      image: oneOneon,
+      image: scratch,
       features: [
         "Intro to block based coding",
         "Logic and control flows",
