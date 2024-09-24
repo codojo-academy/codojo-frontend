@@ -51,7 +51,7 @@ export default function Nav() {
         </NavbarItem>
         <NavbarItem>
           <Link
-            href="course-info"
+            href="/course-info"
             aria-current="page"
             className="lg:flex text-gray-700"
           >
