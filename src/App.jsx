@@ -4,6 +4,7 @@ import BookADemo from "./pages/BookADemo";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import StudentPortal from "./pages/StudentPortal";
+import CoursePage from "./pages/CoursePage";
 
 import { Routes, Route } from "react-router-dom";
 function App() {
@@ -13,6 +14,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/course-info" element={<CoursePage />} />
         <Route path="/book-a-demo" element={<BookADemo />} />
         <Route path="/login" element={<Login />} />
         <Route path="/student-portal" element={<StudentPortal />} />
