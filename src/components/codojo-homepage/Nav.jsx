@@ -59,7 +59,7 @@ export default function Nav() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-gray-700" href="#">
+          <Link className="text-gray-700" href="aboutus">
             About Us
           </Link>
         </NavbarItem>
