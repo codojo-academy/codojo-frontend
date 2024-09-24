@@ -1,3 +1,4 @@
+import Nav from "../components/codojo-homepage/Nav";
 import Content from "../components/codojo-homepage/Content";
 import ClassLook from "../components/codojo-homepage/ClassLook";
 import GettingStarted from "../components/codojo-homepage/GettingStarted";
@@ -10,6 +11,7 @@ import Footer from "../components/codojo-homepage/Footer";
 const Home = () => {
   return (
     <>
+      <Nav />
       <Content />
       <ClassLook />
       <GettingStarted />
