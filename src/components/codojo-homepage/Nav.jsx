@@ -50,7 +50,11 @@ export default function Nav() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#" aria-current="page" className="lg:flex text-gray-700">
+          <Link
+            href="course-info"
+            aria-current="page"
+            className="lg:flex text-gray-700"
+          >
             Courses
           </Link>
         </NavbarItem>
