@@ -48,17 +48,26 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Courses</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="#" className="text-black-300 hover:text-pink-500">
+                <Link
+                  to="course-info"
+                  className="text-black-300 hover:text-pink-500"
+                >
                   Web Development
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-black-300 hover:text-pink-500">
+                <Link
+                  to="course-info"
+                  className="text-black-300 hover:text-pink-500"
+                >
                   Scratch Coding
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-black-300 hover:text-pink-500">
+                <Link
+                  to="course-info"
+                  className="text-black-300 hover:text-pink-500"
+                >
                   DSA
                 </Link>
               </li>
@@ -68,7 +77,10 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="#" className="text-black-300 hover:text-pink-500">
+                <Link
+                  to="aboutus"
+                  className="text-black-300 hover:text-pink-500"
+                >
                   About Us
                 </Link>
               </li>
@@ -88,12 +100,15 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="#" className="text-black-300 hover:text-pink-500">
+                <Link
+                  to="book-a-demo"
+                  className="text-black-300 hover:text-pink-500"
+                >
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-black-300 hover:text-pink-500">
+                <Link to="login" className="text-black-300 hover:text-pink-500">
                   Login
                 </Link>
               </li>
