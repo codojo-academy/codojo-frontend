@@ -107,7 +107,7 @@ const Carousel = () => {
                     .slice(slideIndex * 3, slideIndex * 3 + 3)
                     .map((course, index) => (
                       <div key={index} className="w-1/3 p-4">
-                        <div className="border p-4 rounded-lg shadow-lg">
+                        <div className="border p-4 rounded-lg shadow-lg bg-[#F0F3FF]">
                           <img
                             src={course.image}
                             className="w-full h-48 object-cover rounded-md mb-4"
@@ -116,7 +116,9 @@ const Carousel = () => {
                           <h3 className="text-lg font-bold mb-2 text-[#673AB7]">
                             {course.title}
                           </h3>
-                          <p className="text-gray-700">{course.description}</p>
+                          <p className="text-gray-700 font-semibold">
+                            {course.description}
+                          </p>
                           <ul className="list-disc pl-5 p-1">
                             {course.features.map((feature, idx) => (
                               <li key={idx} className="text-gray-600">
