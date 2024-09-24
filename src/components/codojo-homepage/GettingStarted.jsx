@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
-import selectCourse from "../images/selectcourse.png";
+import selectCourse from "../images/choosecourse.png";
 import bookTrial from "../images/booktrial.png";
 import enroll from "../images/enroll.png";
 
