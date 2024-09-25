@@ -1,8 +1,9 @@
 import { useState } from "react";
 import downloadImage from "../images/download.png";
-import oneOneon from "../images/oneonone.jpg";
+import appDev from "../images/appdev.jpeg";
 import webDev from "../images/WD.jpeg";
 import scratch from "../images/scratch.png";
+import DSA from "../images/DSA.png";
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -37,7 +38,7 @@ const Carousel = () => {
     {
       title: "DSA",
       description: "Learn about fundamental Data Structures and Algorithms",
-      image: downloadImage,
+      image: DSA,
       features: [
         "Understanding Algorithms",
         "Multi-Level Problem Solving",
@@ -50,7 +51,7 @@ const Carousel = () => {
       title: "App Development",
       description:
         "Build responsive and interactive industry-grade iOS & Android apps",
-      image: oneOneon,
+      image: appDev,
       features: [
         "App layouts & core components",
         "Responsive design",
@@ -112,7 +113,7 @@ const Carousel = () => {
                         <div className="border p-4 rounded-lg shadow-lg bg-[#F0F3FF]">
                           <img
                             src={course.image}
-                            className="w-full h-48 object-cover rounded-md mb-4"
+                            className="w-full h-56 object-cover rounded-md mb-4"
                             alt={`Course ${index}`}
                           />
                           <h3 className="text-lg font-bold mb-2 text-[#673AB7]">
