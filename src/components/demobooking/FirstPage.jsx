@@ -80,7 +80,10 @@ const FirstPage = ({ onNextPage }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-gray-100 shadow-md rounded">
+    <form
+      onSubmit={handleSubmit}
+      className="bg-gray-100 shadow-md rounded min-h-screen"
+    >
       <div>
         <h1 className="text-gray-80t0 font-bold pt-8  p-4 text-xl text-center">
           Book your FREE trial <br></br> class in just

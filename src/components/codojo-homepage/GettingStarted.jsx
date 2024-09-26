@@ -5,7 +5,8 @@ import enroll from "../images/enroll.png";
 
 const GettingStarted = () => {
   return (
-    <div className="p-8 bg-gray-100 min-h-screen">
+    // min-h-screen
+    <div className="p-8 bg-gray-100 lg:py-20">
       <h1 className="text-3xl font-bold text-center mb-6 text-[#673AB7]">
         Getting started is super easy
       </h1>

@@ -2,7 +2,7 @@ import oneOnone from "../images/oneonone.jpg";
 
 const ClassLook = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center p-6">
+    <div className=" flex flex-col justify-center items-center p-6 lg:py-20 ">
       <h1 className="text-3xl font-bold text-center mb-8 text-pink-500">
         What does a typical class look like?
       </h1>

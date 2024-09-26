@@ -113,7 +113,8 @@ const Carousel = () => {
                         <div className="border p-4 rounded-lg shadow-lg bg-[#F0F3FF]">
                           <img
                             src={course.image}
-                            className="w-full h-56 object-cover rounded-md mb-4"
+                            // object-cover, object-contain
+                            className="w-full h-56 object-fill rounded-md mb-4"
                             alt={`Course ${index}`}
                           />
                           <h3 className="text-lg font-bold mb-2 text-[#673AB7]">
