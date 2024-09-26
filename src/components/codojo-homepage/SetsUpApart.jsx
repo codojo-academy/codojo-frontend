@@ -7,7 +7,7 @@ import { PiBooksDuotone } from "react-icons/pi";
 
 const SetsUpApart = () => {
   return (
-    <div className="p-8 bg-gray-100 min-h-screen mt-8 rounded-lg py-10 ">
+    <div className="p-8 bg-gray-100 mt-8 rounded-lg py-10 lg:py-20">
       <h1 className="text-4xl font-bold mb-8 text-center text-[#673AB7]">
         What really sets us apart.
       </h1>
