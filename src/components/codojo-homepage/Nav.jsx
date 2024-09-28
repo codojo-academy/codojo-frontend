@@ -11,6 +11,7 @@ import {
 } from "@nextui-org/react";
 
 import { useState } from "react";
+import icon from "../images/icon.png";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,6 +38,7 @@ export default function Nav() {
         />
         <NavbarBrand>
           {/* <AcmeLogo /> */}
+          <img src={icon} alt="Interactive class" />
           <Link className="font-bold text-inherit" href="/">
             CODOJO
           </Link>
