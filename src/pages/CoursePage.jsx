@@ -1,11 +1,11 @@
 import Nav from "../components/codojo-homepage/Nav";
 import CourseInfo from "../components/coursepage/CourseInfo";
-// import BookingBtn from "../components/coursepage/BookingBtn";
+import DemoLink from "../components/coursepage/DemoLink";
 const CoursePage = () => {
   return (
     <>
       <Nav />
-      {/* <BookingBtn /> */}
+      <DemoLink />
       <CourseInfo />
     </>
   );
