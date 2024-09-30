@@ -27,7 +27,7 @@ const TrySession = () => {
       </div>
       {/* <div className="space-y-4 flex bg-[#eadff5]"> */}
       {/* bg-[#eadff5] */}
-      <div className="grid grid-cols-1 md:grid-cols-3 p-2 py-4 bg-gray-200">
+      <div className="grid grid-cols-1 md:grid-cols-3 p-2 py-4 bg-gray-200 justify-items-center">
         <div className="flex items-center space-x-4">
           <IoMailOutline className="text-[#673AB7] text-4xl rounded-full bg-[#d8bfd8] p-1" />
           <div className="">

@@ -6,7 +6,7 @@ const ClassJoin = () => {
   return (
     <>
       <div className="flex items-center justify-center min-h-screen bg-gray-100">
-        <div className="border border-gray-300 rounded-lg p-6 text-center max-w-xs px-12 bg-[#FDECF2]">
+        <div className="border border-gray-300 rounded-lg p-6 text-center px-12 bg-[#FDECF2] w-[500px] py-12">
           <p className="text-xl text-gray-800 mb-4">
             Student Name: {studentName}
           </p>

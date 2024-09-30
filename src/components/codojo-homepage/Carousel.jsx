@@ -123,9 +123,12 @@ const Carousel = () => {
                           <p className="text-gray-700 font-semibold">
                             {course.description}
                           </p>
-                          <ul className="list-disc pl-5 p-1">
+                          <ul className=" p-1">
                             {course.features.map((feature, idx) => (
                               <li key={idx} className="text-gray-600">
+                                <span className="text-[#673AB7] font-bold mr-2">
+                                  ✓
+                                </span>
                                 {feature}
                               </li>
                             ))}
@@ -145,7 +148,7 @@ const Carousel = () => {
               <button
                 key={index}
                 type="button"
-                className={`w-3 h-3 rounded-full ${
+                className={`w-3 h-3 rounded-full  ${
                   index === activeIndex ? "bg-gray-800" : "bg-gray-400"
                 }`}
                 aria-current={index === activeIndex}
