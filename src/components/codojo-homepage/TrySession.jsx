@@ -14,7 +14,7 @@ const TrySession = () => {
     <>
       {/* bg-[#9a71e3] */}
       {/* bg-[#FDECF2] */}
-      <div className="bg-gray-100 p-12">
+      <div className="bg-gray-100 p-20">
         <h1 className="text-3xl text-[#673AB7] font-bold text-center mb-10">
           Want to try a session before starting?
         </h1>
