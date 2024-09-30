@@ -1,4 +1,4 @@
-import tryaclass from "../images/courseimg.jpeg";
+import tryaclass from "../images/student_bg_F3F4F6.jpeg";
 const DemoLink = () => {
   return (
     <>
