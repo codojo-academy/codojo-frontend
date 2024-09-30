@@ -1,13 +1,10 @@
-import { useNavigate } from "react-router-dom";
+import useBookADemo from "../hooks/useBookADemo";
 
 import downloadImage from "../images/tryaclass.jpeg";
 
 const TrialClassBanner = () => {
-  const navigate = useNavigate();
+  const { bookADemoPage } = useBookADemo();
 
-  const bookADemoPage = () => {
-    navigate("/book-a-demo");
-  };
   return (
     <div className="bg-gray-100 py-10 px-6 lg:px-20">
       <h1 className="text-4xl text-[#673AB7] font-bold text-center mb-10">
