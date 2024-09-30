@@ -1,4 +1,5 @@
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
+import useBookADemo from "../hooks/useBookADemo";
 import downloadImage from "../images/content.png";
 import { GoHome } from "react-icons/go";
 import { LuUser2 } from "react-icons/lu";
@@ -6,11 +7,12 @@ import { BsStars } from "react-icons/bs";
 import { RiCalendarScheduleLine } from "react-icons/ri";
 
 const Content = () => {
-  const navigate = useNavigate();
-
-  const bookADemoPage = () => {
-    navigate("/book-a-demo");
-  };
+  const { bookADemoPage } = useBookADemo();
+  //   const navigate = useNavigate();
+  //
+  //   const bookADemoPage = () => {
+  //     navigate("/book-a-demo");
+  //   };
 
   return (
     <div className="flex flex-col md:flex-row md:justify-around gap-6  items-center p-6 lg:pt-10 bg-gray-100">

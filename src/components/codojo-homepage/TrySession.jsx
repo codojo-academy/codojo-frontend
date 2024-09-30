@@ -1,15 +1,10 @@
-import { useNavigate } from "react-router-dom";
-
+import useBookADemo from "../hooks/useBookADemo";
 import { IoMailOutline } from "react-icons/io5";
 import { GrPhone } from "react-icons/gr";
 import { LuCalendarClock } from "react-icons/lu";
 
 const TrySession = () => {
-  const navigate = useNavigate();
-
-  const bookADemoPage = () => {
-    navigate("/book-a-demo");
-  };
+  const { bookADemoPage } = useBookADemo();
   return (
     <>
       {/* bg-[#9a71e3] */}
