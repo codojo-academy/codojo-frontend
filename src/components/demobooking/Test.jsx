@@ -72,42 +72,10 @@ const FirstPage = ({ onNextPage }) => {
     return Object.keys(errors).length === 0;
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const formData = {
-      email,
-      phone,
-      grade,
-      course,
-      isAdult,
-      agreeTerms,
-      yourName,
-      childName,
-    };
-
     if (validate()) {
-      try {
-        const response = await fetch(
-          "https://your-backend-endpoint.com/api/submit",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formData),
-          }
-        );
-
-        if (response.ok) {
-          const result = await response.json();
-          console.log("Success:", result);
-          onNextPage(); // Navigate to the next page
-        } else {
-          console.error("Error:", response.statusText);
-        }
-      } catch (error) {
-        console.error("Error submitting the form:", error);
-      }
+      onNextPage(); // Call this to navigate to the second page
     }
   };
 
