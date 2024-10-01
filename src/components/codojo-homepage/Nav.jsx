@@ -149,7 +149,7 @@ export default function Nav() {
               </Link>
             </div>
             {/* Navigation Links */}
-            <div className="hidden sm:flex space-x-4 ml-40 gap-4">
+            <div className="hidden sm:flex space-x-4 ml-40 gap-4 flex justify-center">
               <Link
                 to="/"
                 className="text-gray-700 font-semibold hover:text-purple-600"
