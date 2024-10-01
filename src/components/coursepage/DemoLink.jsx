@@ -1,5 +1,8 @@
 import tryaclass from "../images/student_bg_F3F4F6.jpeg";
+import useBookADemo from "../hooks/useBookADemo";
+
 const DemoLink = () => {
+  const { bookADemoPage } = useBookADemo();
   return (
     <>
       <div className="flex flex-col lg:flex-row md:flex-row justify-evenly items-start bg-gray-100 font-sans p-28">
@@ -18,7 +21,10 @@ const DemoLink = () => {
               ✔️ Address real-world challenges with coding
             </li>
           </ul>
-          <button className="bg-yellow-400 text-[#943000] hover:bg-yellow-500 transition-all py-3 px-6 rounded-lg font-semibold">
+          <button
+            className="bg-yellow-400 text-[#943000] hover:bg-yellow-500 transition-all py-3 px-6 rounded-lg font-semibold"
+            onClick={bookADemoPage}
+          >
             Book a FREE trial class ➔
           </button>
           {/* <div className="mt-6">
