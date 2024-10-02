@@ -1,3 +1,5 @@
+import { MdArrowOutward } from "react-icons/md";
+
 const CourseInfo = () => {
   const courses = [
     {
@@ -10,7 +12,7 @@ const CourseInfo = () => {
         "React development",
         "Building full-stack applications",
       ],
-      curriculumLink: "/path/to/web-dev-curriculum.pdf",
+      curriculumLink: "/pdfs/Sr.pdf",
     },
     {
       name: "DSA",
@@ -92,8 +94,9 @@ const CourseInfo = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="bg-yellow-400 text-[#943000] font-bold py-2 px-4 rounded hover:bg-yellow-500 transition-colors duration-300">
+              <button className="bg-yellow-400 text-[#943000] font-bold py-2 px-4 rounded hover:bg-yellow-500 transition-colors duration-300 flex items-center gap-2">
                 See Curriculum
+                <MdArrowOutward />
               </button>
             </a>
           </div>
