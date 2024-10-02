@@ -11,6 +11,7 @@ const CourseInfo = () => {
         "JavaScript fundamentals",
         "React development",
         "Building full-stack applications",
+        "Introduction to web dev for beginners",
       ],
       curriculumLink: "/pdfs/Sr.pdf",
     },
@@ -19,10 +20,11 @@ const CourseInfo = () => {
       description:
         "Master the essential data structures and algorithms for coding interviews.",
       keyPoints: [
-        "Arrays & Linked Lists",
-        "Stacks & Queues",
-        "Sorting & Searching algorithms",
-        "Dynamic Programming",
+        "Understanding basic data structures",
+        "Introduction to Arrays",
+        "Simple Sorting  algorithms",
+        "Learning recursion basics",
+        "Problem-solving with fun examples",
       ],
       curriculumLink: "/path/to/dsa-curriculum.pdf",
     },
@@ -35,6 +37,7 @@ const CourseInfo = () => {
         "Creating games and animations",
         "Logic and problem-solving",
         "Building interactive projects",
+        "Introduction to programming concepts",
       ],
       curriculumLink: "/path/to/scratch-curriculum.pdf",
     },
@@ -71,7 +74,7 @@ const CourseInfo = () => {
       <h1 className="text-4xl font-bold text-[#673AB7] text-center mb-20">
         Our Courses
       </h1>
-      <div className="grid grid-cols-1  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
         {courses.map((course, index) => (
           <div
             key={index}
@@ -94,7 +97,7 @@ const CourseInfo = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="bg-yellow-400 text-[#943000] font-bold py-2 px-4 rounded hover:bg-yellow-500 transition-colors duration-300 flex items-center gap-2">
+              <button className="bg-yellow-400 text-[#943000] font-bold py-2 px-6 rounded hover:bg-yellow-500 transition-colors duration-300 flex items-center gap-2">
                 See Curriculum
                 <MdArrowOutward />
               </button>
