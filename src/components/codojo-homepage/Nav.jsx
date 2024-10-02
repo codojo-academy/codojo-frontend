@@ -144,7 +144,10 @@ export default function Nav() {
             {/* Brand */}
             <div className="flex-shrink-0 flex items-center">
               <img src={icon} alt="Interactive class" className="h-8 w-auto" />
-              <Link to="/" className="text-xl font-bold ml-2 hidden sm:block">
+              <Link
+                to="/"
+                className="text-xl font-bold ml-2 hidden sm:block text-transparent bg-clip-text bg-gradient-to-r from-[#673AB7]  to-[#E91E63]"
+              >
                 CODOJO
               </Link>
             </div>
