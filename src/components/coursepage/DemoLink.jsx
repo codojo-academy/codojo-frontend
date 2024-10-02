@@ -5,7 +5,7 @@ const DemoLink = () => {
   const { bookADemoPage } = useBookADemo();
   return (
     <>
-      <div className="flex flex-col lg:flex-row md:flex-row justify-evenly items-start bg-gray-100 font-sans p-28">
+      <div className="flex flex-col lg:flex-row md:flex-row justify-evenly items-start bg-gray-100 font-sans p-28 lg:py-20  sm:mt-20">
         {/* Text Content Section */}
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
           <h1 className="text-4xl font-bold text-[#673AB7] mb-4">
