@@ -14,66 +14,72 @@ const GettingStarted = () => {
         <br className="hidden sm:block" />a functional PC & stable internet is
         all you need!
       </p>
-      {/* Replaced flex with grid for responsiveness */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
-        <Card className="py-4 shadow-lg w-full max-w-sm mx-auto">
+      {/* Flexbox layout updated for responsiveness */}
+      <div className="flex flex-col sm:flex-row justify-center space-y-6 sm:space-y-0 sm:space-x-6">
+        <Card className="py-4 shadow-lg flex flex-col items-center">
           <Image
             alt="Card background"
             className="object-cover rounded-t-xl"
             src={selectCourse}
             width={270}
           />
-          <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-            <div className="flex items-center space-x-4">
-              <span className="text-gray-500 text-4xl sm:text-6xl">1</span>
-              <span className="text-xs sm:text-sm text-gray-500">
-                <h4 className="font-bold text-base text-gray-700">
+          <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
+            <div className="flex items-center space-x-2 sm:space-x-4">
+              <span className="text-gray-500 text-3xl sm:text-6xl">1</span>
+              <div className="">
+                <h4 className="font-bold text-base sm:text-lg text-gray-700">
                   Select course
                 </h4>
-                Choose a course based on <br /> your kid’s age/grade
-              </span>
+                <p className="text-xs sm:text-sm text-gray-500">
+                  Choose a course based on <br /> your kid’s age/grade
+                </p>
+              </div>
             </div>
           </CardHeader>
           <CardBody className="overflow-visible py-2"></CardBody>
         </Card>
 
-        <Card className="py-4 shadow-lg w-full max-w-sm mx-auto">
+        <Card className="py-4 shadow-lg flex flex-col items-center">
           <Image
             alt="Card background"
             className="object-cover rounded-t-xl"
             src={bookTrial}
             width={270}
           />
-          <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-            <div className="flex items-center space-x-4">
-              <span className="text-gray-500 text-4xl sm:text-6xl">2</span>
-              <span className="text-xs sm:text-sm text-gray-500">
-                <h4 className="font-bold text-base text-gray-700">
+          <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
+            <div className="flex items-center space-x-2 sm:space-x-4">
+              <span className="text-gray-500 text-3xl sm:text-6xl">2</span>
+              <div className="">
+                <h4 className="font-bold text-base sm:text-lg text-gray-700">
                   Book the FREE trial class
                 </h4>
-                Choose a mentor of choice & <br /> your preferred time slot
-              </span>
+                <p className="text-xs sm:text-sm text-gray-500">
+                  Choose a mentor of choice & <br /> your preferred time slot
+                </p>
+              </div>
             </div>
           </CardHeader>
           <CardBody className="overflow-visible py-2"></CardBody>
         </Card>
 
-        <Card className="py-4 shadow-lg w-full max-w-sm mx-auto">
+        <Card className="py-4 shadow-lg flex flex-col items-center">
           <Image
             alt="Card background"
             className="object-cover rounded-t-xl"
             src={enroll}
             width={270}
           />
-          <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-            <div className="flex items-center space-x-4">
-              <span className="text-gray-500 text-4xl sm:text-6xl">3</span>
-              <span className="text-xs sm:text-sm text-gray-500">
-                <h4 className="font-bold text-base text-gray-700">
+          <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
+            <div className="flex items-center space-x-2 sm:space-x-4">
+              <span className="text-gray-500 text-3xl sm:text-6xl">3</span>
+              <div className="">
+                <h4 className="font-bold text-base sm:text-lg text-gray-700">
                   Enroll for the course
                 </h4>
-                If you like the demo class, <br /> begin your kid’s journey!
-              </span>
+                <p className="text-xs sm:text-sm text-gray-500">
+                  If you like the demo class, <br /> begin your kid’s journey!
+                </p>
+              </div>
             </div>
           </CardHeader>
           <CardBody className="overflow-visible py-2"></CardBody>
