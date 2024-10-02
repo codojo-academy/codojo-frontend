@@ -1,9 +1,10 @@
 import { useState } from "react";
-import downloadImage from "../images/download.png";
+// import downloadImage from "../images/download.png";
 import appDev from "../images/appdev.jpeg";
 import webDev from "../images/WD.jpeg";
 import scratch from "../images/scratch.png";
 import DSA from "../images/DSA.png";
+import graphic from "../images/graphic.jpeg";
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -61,11 +62,19 @@ const Carousel = () => {
       ],
     },
     {
-      title: "Course 5",
-      description: "Description for Course 5",
-      image: downloadImage,
-      features: ["HTML", "CSS", "JavaScript"],
+      title: "Graphic Design",
+      description:
+        "Explore creative tools and techniques to design visually appealing projects.",
+      image: graphic,
+      features: [
+        "Basic design principles",
+        "Understanding colors and typography",
+        "Working with design software",
+        "Creating posters and presentations",
+        "Visual storytelling",
+      ],
     },
+
     // {
     //   title: "Course 6",
     //   description: "Description for Course 6",
