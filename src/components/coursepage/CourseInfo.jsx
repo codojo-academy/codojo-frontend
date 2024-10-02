@@ -52,17 +52,17 @@ const CourseInfo = () => {
       curriculumLink: "/path/to/scratch-curriculum.pdf",
     },
     {
-      name: "App Development",
+      name: "Graphic Design",
       description:
-        "Build responsive and interactive industry-grade iOS & Android apps",
+        "Explore creative tools and techniques to design visually appealing projects.",
       keyPoints: [
-        "App layouts & core components",
-        "Responsive design",
-        "App deployment",
-        "Navigation & state management",
-        "Network request & data mgmt",
+        "Basic design principles",
+        "Understanding colors and typography",
+        "Working with design software",
+        "Creating posters and presentations",
+        "Visual storytelling",
       ],
-      curriculumLink: "/path/to/scratch-curriculum.pdf",
+      curriculumLink: "/path/to/graphic-design-curriculum.pdf",
     },
   ];
 
