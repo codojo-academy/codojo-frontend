@@ -39,7 +39,7 @@ const CourseInfo = () => {
         "Building interactive projects",
         "Introduction to programming concepts",
       ],
-      curriculumLink: "/path/to/scratch-curriculum.pdf",
+      curriculumLink: "/pdfs/scratch_programming_course.pdf",
     },
     {
       name: "App Development",
