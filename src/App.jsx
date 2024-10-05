@@ -7,6 +7,9 @@ import StudentPortal from "./pages/StudentPortal";
 import CoursePage from "./pages/CoursePage";
 import AboutUs from "./pages/AboutUs";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import { Routes, Route } from "react-router-dom";
 function App() {
   return (
