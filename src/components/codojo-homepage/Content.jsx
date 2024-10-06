@@ -15,7 +15,7 @@ const Content = () => {
   //   };
 
   return (
-    <div className="flex flex-col md:flex-row md:justify-around gap-6 lg:py-20 sm:mt-20 items-center p-6 lg:pt-10 bg-gray-100">
+    <div className="flex flex-col md:flex-row md:justify-around gap-6 py-20 lg:py-20 sm:py-10 items-center bg-gray-100">
       {/* Text Section */}
       <div className="p-6 md:p-6 lg:pl-20 lg:p-0 w-full md:w-1/2 space-y-6 lg:mr-[-100px]">
         <h1 className="text-[#673AB7] text-3xl sm:text-4xl lg:text-4xl font-semibold leading-tight">
