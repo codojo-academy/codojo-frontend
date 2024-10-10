@@ -9,11 +9,9 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0">
         {/* Social Media Links */}
         <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
-          <div className="flex flex-col space-x-4">
-            <h1 className="text-lg font-bold pl-4 text-gray-700">
-              FOLLOW CODOJO
-            </h1>
-            <div className="flex gap-3">
+          <div className="flex flex-col">
+            <h1 className="text-lg font-bold text-gray-700">FOLLOW CODOJO</h1>
+            <div className="flex gap-3 mt-1">
               <a
                 href="https://www.linkedin.com/feed/"
                 target="_blank"
