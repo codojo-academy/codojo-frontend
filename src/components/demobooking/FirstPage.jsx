@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
@@ -15,6 +15,12 @@ const FirstPage = ({ onNextPage }) => {
   const [yourName, setYourName] = useState("");
   const [childName, setChildName] = useState("");
   const [errors, setErrors] = useState({});
+
+  const yourNameInputRef = useRef(null); // Step 2: Create ref
+
+  useEffect(() => {
+    yourNameInputRef.current.focus(); // Step 3: Focus on the input
+  }, []);
 
   const handleChange = (value) => {
     setPhone(value);
@@ -126,14 +132,15 @@ const FirstPage = ({ onNextPage }) => {
         </p>
 
         {/* Flexbox container for two rows */}
-        <div className="flex flex-wrap justify-between p-6">
+        <div className="flex flex-col md:flex-row justify-between p-6">
           {/* Left Side Inputs */}
-          <div className="w-[48%]">
+          <div className="md:w-[48%] sm:w-[56%] mb-4 md:mb-0">
             <div className="m-4">
               <label className="block text-gray-700 font-bold mb-2">
                 Your Name*
               </label>
               <input
+                ref={yourNameInputRef}
                 placeholder="Your Name"
                 type="text"
                 className={`shadow appearance-none border ${
@@ -187,7 +194,7 @@ const FirstPage = ({ onNextPage }) => {
           </div>
 
           {/* Right Side Inputs */}
-          <div className="w-[48%]">
+          <div className="md:w-[48%] sm:w-[56%]">
             <div className="m-4">
               <label className="block text-gray-700 font-bold mb-2">
                 Parent's Phone Number*
