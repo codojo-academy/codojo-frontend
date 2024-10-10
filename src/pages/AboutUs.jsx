@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <>
       <Nav />
-      <div className="bg-gray-100 py-10 lg:py-20 sm:mt-20">
+      <div className="bg-gray-100 py-28 lg:py-28 sm:py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-center mb-6 text-[#E91E63]">
             About Us
