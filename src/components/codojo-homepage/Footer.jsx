@@ -47,7 +47,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="course-info"
+                  to="/course-info"
                   className="text-black-300 hover:text-pink-500"
                 >
                   Web Development
@@ -55,7 +55,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="course-info"
+                  to="/course-info"
                   className="text-black-300 hover:text-pink-500"
                 >
                   Scratch Coding
@@ -63,7 +63,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="course-info"
+                  to="/course-info"
                   className="text-black-300 hover:text-pink-500"
                 >
                   DSA
@@ -76,7 +76,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="aboutus"
+                  to="/aboutus"
                   className="text-black-300 hover:text-pink-500"
                 >
                   About Us
@@ -99,14 +99,17 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="book-a-demo"
+                  to="/book-a-demo"
                   className="text-black-300 hover:text-pink-500"
                 >
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link to="login" className="text-black-300 hover:text-pink-500">
+                <Link
+                  to="/login"
+                  className="text-black-300 hover:text-pink-500"
+                >
                   Login
                 </Link>
               </li>
