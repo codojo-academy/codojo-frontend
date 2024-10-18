@@ -13,7 +13,7 @@ const CourseInfo = () => {
         "Building full-stack applications",
         "Introduction to web dev for beginners",
       ],
-      curriculumLink: "/pdfs/Sr.pdf",
+      curriculumLink: "/pdfs/web_dev_course.pdf",
     },
     {
       name: "DSA",
