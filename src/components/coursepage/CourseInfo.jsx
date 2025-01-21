@@ -18,7 +18,7 @@ const CourseInfo = () => {
     {
       name: "DSA",
       description:
-        "Master the essential data structures and algorithms for coding interviews.",
+        "Master the essential data structures and algorithms for coding.",
       keyPoints: [
         "Understanding basic data structures",
         "Introduction to Arrays",
@@ -26,7 +26,7 @@ const CourseInfo = () => {
         "Learning recursion basics",
         "Problem-solving with fun examples",
       ],
-      curriculumLink: "/path/to/dsa-curriculum.pdf",
+      curriculumLink: "/pdfs/dsa_course.pdf",
     },
     {
       name: "Scratch Programming",
