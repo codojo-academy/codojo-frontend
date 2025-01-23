@@ -37,6 +37,19 @@ const Carousel = () => {
       ],
     },
     {
+      title: "Java & Android App Development",
+      description:
+        "Build responsive and interactive industry-grade Android apps",
+      image: appDev,
+      features: [
+        "Introduction to Java",
+        "Object oriented programming (OOPS)",
+        "Algorithmic thinking and control flow",
+        "Data structures and algorithms",
+        "Data mgmt & GUI programming",
+      ],
+    },
+    {
       title: "DSA",
       description: "Learn about fundamental Data Structures and Algorithms",
       image: DSA,
@@ -46,19 +59,6 @@ const Carousel = () => {
         "Problem-solving Techniques",
         "Real-life Applications of DSA",
         "Dynamic Programming",
-      ],
-    },
-    {
-      title: "App Development",
-      description:
-        "Build responsive and interactive industry-grade iOS & Android apps",
-      image: appDev,
-      features: [
-        "App layouts & core components",
-        "Responsive design",
-        "App deployment",
-        "Navigation & state management",
-        "Network request & data mgmt",
       ],
     },
     {
