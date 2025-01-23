@@ -13,7 +13,7 @@ const Footer = () => {
             <h1 className="text-lg font-bold text-gray-700">FOLLOW CODOJO</h1>
             <div className="flex gap-3 mt-1">
               <a
-                href="https://www.linkedin.com/feed/"
+                href="https://www.instagram.com/codo_jo/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-pink-500 hover:text-pink-400"
@@ -21,7 +21,7 @@ const Footer = () => {
                 <FaInstagram className="text-4xl bg-[#ffe0eb] p-1 rounded" />
               </a>
               <a
-                href="https://www.linkedin.com/feed/"
+                href="https://www.instagram.com/codo_jo/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-pink-500 hover:text-pink-400"
@@ -29,7 +29,7 @@ const Footer = () => {
                 <FaYoutube className="text-4xl bg-[#ffe0eb] p-1 rounded" />
               </a>
               <a
-                href="https://www.linkedin.com/feed/"
+                href="https://www.linkedin.com/in/codojo-%F0%9F%92%BB-97a028349/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-pink-500 hover:text-pink-400"
@@ -61,12 +61,21 @@ const Footer = () => {
                   Scratch Coding
                 </Link>
               </li>
+
               <li>
                 <Link
                   to="/course-info"
                   className="text-black-300 hover:text-pink-500"
                 >
                   DSA
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/course-info"
+                  className="text-black-300 hover:text-pink-500"
+                >
+                  Graphic Design
                 </Link>
               </li>
             </ul>
