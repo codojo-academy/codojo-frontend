@@ -129,12 +129,12 @@
 //   );
 // }
 
-import { useState } from "react";
+// import { useState } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import icon from "../images/icon.png"; // Make sure this path is correct
 
 export default function Nav() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  // const [isLoggedIn, setIsLoggedIn] = useState(false); /* true */
 
   return (
     <nav className="bg-white shadow-lg p-3 fixed top-0 h-30 w-full z-50">
@@ -181,7 +181,7 @@ export default function Nav() {
           </div>
 
           {/* Right side of Navbar */}
-          <div className="flex items-center space-x-4">
+          {/* <div className="flex items-center space-x-4">
             {isLoggedIn ? (
               <>
                 <Link
@@ -192,7 +192,7 @@ export default function Nav() {
                   Student Portal
                 </Link>
                 <button
-                  onClick={() => setIsLoggedIn(false)}
+                  onClick={() => setIsLoggedIn(true)} false
                   className="bg-purple-600 text-white py-1.5 px-4 rounded hover:bg-purple-700"
                 >
                   Logout
@@ -206,7 +206,7 @@ export default function Nav() {
                 Login
               </Link>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

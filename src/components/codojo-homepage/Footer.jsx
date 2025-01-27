@@ -1,4 +1,4 @@
-import { FaYoutube } from "react-icons/fa";
+// import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -20,16 +20,16 @@ const Footer = () => {
               >
                 <FaInstagram className="text-4xl bg-[#ffe0eb] p-1 rounded" />
               </a>
-              <a
+              {/* <a
                 href="https://www.instagram.com/codo_jo/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-pink-500 hover:text-pink-400"
               >
                 <FaYoutube className="text-4xl bg-[#ffe0eb] p-1 rounded" />
-              </a>
+              </a> */}
               <a
-                href="https://www.linkedin.com/in/codojo-%F0%9F%92%BB-97a028349/"
+                href="https://www.linkedin.com/company/codojo0/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-pink-500 hover:text-pink-400"

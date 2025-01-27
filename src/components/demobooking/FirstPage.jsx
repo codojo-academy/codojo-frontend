@@ -6,14 +6,14 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
 const FirstPage = ({ onNextPage }) => {
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [grade, setGrade] = useState("");
-  const [course, setCourse] = useState("");
+  const [parent_name, setParent_name] = useState("");
+  const [child_name, setChild_name] = useState("");
+  const [parent_email, setParent_email] = useState("");
+  const [phone_number, setPhone_number] = useState("");
+  const [student_grade, setStudent_grade] = useState("");
+  const [selected_course, setSelected_course] = useState("");
   const [isAdult, setIsAdult] = useState(true);
   const [agreeTerms, setAgreeTerms] = useState(true);
-  const [yourName, setYourName] = useState("");
-  const [childName, setChildName] = useState("");
   const [errors, setErrors] = useState({});
 
   const yourNameInputRef = useRef(null); // Step 2: Create ref
@@ -23,7 +23,7 @@ const FirstPage = ({ onNextPage }) => {
   }, []);
 
   const handleChange = (value) => {
-    setPhone(value);
+    setPhone_number(value);
   };
 
   const validate = () => {
@@ -32,36 +32,36 @@ const FirstPage = ({ onNextPage }) => {
     const phoneRegex = /^\+?[0-9]{10,14}$/;
     const nameRegex = /^[A-Za-z\s]+$/;
 
-    if (!yourName) {
+    if (!parent_name) {
       errors.yourName = "Your name is required";
-    } else if (!nameRegex.test(yourName)) {
+    } else if (!nameRegex.test(parent_name)) {
       errors.yourName = "Your name can only contain letters";
     }
 
-    if (!childName) {
-      errors.childName = "Child's name is required";
-    } else if (!nameRegex.test(childName)) {
-      errors.childName = "Child's name can only contain letters";
+    if (!child_name) {
+      errors.child_name = "Child's name is required";
+    } else if (!nameRegex.test(child_name)) {
+      errors.child_name = "Child's name can only contain letters";
     }
 
-    if (!email) {
-      errors.email = "Email is required";
-    } else if (!emailRegex.test(email)) {
-      errors.email = "Email is not valid";
+    if (!parent_email) {
+      errors.parent_email = "Email is required";
+    } else if (!emailRegex.test(parent_email)) {
+      errors.parent_email = "Email is not valid";
     }
 
-    if (!phone) {
-      errors.phone = "Phone number is required";
-    } else if (!phoneRegex.test(phone)) {
-      errors.phone = "Phone number is not valid";
+    if (!phone_number) {
+      errors.phone_number = "Phone number is required";
+    } else if (!phoneRegex.test(phone_number)) {
+      errors.phone_number = "Phone number is not valid";
     }
 
-    if (!grade) {
+    if (!student_grade) {
       errors.grade = "Grade is required";
     }
 
-    if (!course) {
-      errors.course = "Grade is required";
+    if (!selected_course) {
+      errors.selected_course = "Grade is required";
     }
 
     if (!isAdult) {
@@ -81,20 +81,20 @@ const FirstPage = ({ onNextPage }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = {
-      email,
-      phone,
-      grade,
-      course,
+      parent_name,
+      child_name,
+      parent_email,
+      phone_number,
+      student_grade,
+      selected_course,
       isAdult,
       agreeTerms,
-      yourName,
-      childName,
     };
-
+    //
     if (validate()) {
       try {
         const response = await fetch(
-          "https://your-backend-endpoint.com/api/submit",
+          "https://jsonplaceholder.typicode.com/posts",
           {
             method: "POST",
             headers: {
@@ -116,6 +116,12 @@ const FirstPage = ({ onNextPage }) => {
       }
     }
   };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   if (validate()) {
+  //     onNextPage(); // Call this to navigate to the second page
+  //   }
+  // };
 
   return (
     <form
@@ -144,13 +150,15 @@ const FirstPage = ({ onNextPage }) => {
                 placeholder="Your Name"
                 type="text"
                 className={`shadow appearance-none border ${
-                  errors.yourName ? "border-red-500" : "border-gray-300"
+                  errors.parent_name ? "border-red-500" : "border-gray-300"
                 } rounded w-3/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
-                value={yourName}
-                onChange={(e) => setYourName(e.target.value)}
+                value={parent_name}
+                onChange={(e) => setParent_name(e.target.value)}
               />
               {errors.yourName && (
-                <p className="text-red-500 text-xs italic">{errors.yourName}</p>
+                <p className="text-red-500 text-xs italic">
+                  {errors.parent_name}
+                </p>
               )}
             </div>
 
@@ -162,14 +170,14 @@ const FirstPage = ({ onNextPage }) => {
                 placeholder="Child's Name"
                 type="text"
                 className={`shadow appearance-none border ${
-                  errors.childName ? "border-red-500" : "border-gray-300"
+                  errors.child_name ? "border-red-500" : "border-gray-300"
                 } rounded w-3/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
-                value={childName}
-                onChange={(e) => setChildName(e.target.value)}
+                value={child_name}
+                onChange={(e) => setChild_name(e.target.value)}
               />
-              {errors.childName && (
+              {errors.child_name && (
                 <p className="text-red-500 text-xs italic">
-                  {errors.childName}
+                  {errors.child_name}
                 </p>
               )}
             </div>
@@ -182,13 +190,15 @@ const FirstPage = ({ onNextPage }) => {
                 placeholder="Enter Parent's email ID"
                 type="email"
                 className={`shadow appearance-none border ${
-                  errors.email ? "border-red-500" : "border-gray-300"
+                  errors.parent_email ? "border-red-500" : "border-gray-300"
                 } rounded w-3/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                value={parent_email}
+                onChange={(e) => setParent_email(e.target.value)}
               />
-              {errors.email && (
-                <p className="text-red-500 text-xs italic">{errors.email}</p>
+              {errors.parent_email && (
+                <p className="text-red-500 text-xs italic">
+                  {errors.parent_email}
+                </p>
               )}
             </div>
           </div>
@@ -206,7 +216,7 @@ const FirstPage = ({ onNextPage }) => {
                 containerClass="w-full"
                 inputClass="border border-gray-300 rounded shadow-sm py-2 px-3 focus:outline-none focus:shadow-outline"
                 country={"de"}
-                value={phone}
+                value={phone_number}
                 onChange={handleChange}
                 placeholder="Enter phone number"
                 inputProps={{
@@ -215,8 +225,10 @@ const FirstPage = ({ onNextPage }) => {
                   autoFocus: true,
                 }}
               />
-              {errors.phone && (
-                <p className="text-red-500 text-xs italic">{errors.phone}</p>
+              {errors.phone_number && (
+                <p className="text-red-500 text-xs italic">
+                  {errors.phone_number}
+                </p>
               )}
             </div>
 
@@ -226,10 +238,10 @@ const FirstPage = ({ onNextPage }) => {
               </label>
               <select
                 className={`shadow appearance-none border ${
-                  errors.grade ? "border-red-500" : "border-gray-300"
+                  errors.student_grade ? "border-red-500" : "border-gray-300"
                 } rounded w-3/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
-                value={grade}
-                onChange={(e) => setGrade(e.target.value)}
+                value={student_grade}
+                onChange={(e) => setStudent_grade(e.target.value)}
                 required
               >
                 <option value="" disabled>
@@ -248,8 +260,10 @@ const FirstPage = ({ onNextPage }) => {
                 <option value="grade4">Grade 11</option>
                 <option value="grade5">Grade 12</option>
               </select>
-              {errors.grade && (
-                <p className="text-red-500 text-xs italic">{errors.grade}</p>
+              {errors.student_grade && (
+                <p className="text-red-500 text-xs italic">
+                  {errors.student_grade}
+                </p>
               )}
             </div>
 
@@ -259,10 +273,10 @@ const FirstPage = ({ onNextPage }) => {
               </label>
               <select
                 className={`shadow appearance-none border ${
-                  errors.course ? "border-red-500" : "border-gray-300"
+                  errors.selected_course ? "border-red-500" : "border-gray-300"
                 } rounded w-3/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
-                value={course}
-                onChange={(e) => setCourse(e.target.value)}
+                value={selected_course}
+                onChange={(e) => setSelected_course(e.target.value)}
                 required
               >
                 <option value="" disabled>
@@ -271,6 +285,8 @@ const FirstPage = ({ onNextPage }) => {
                 <option value="webdev">Web Dev</option>
                 <option value="scratch">Scratch</option>
                 <option value="dsa">DSA</option>
+                <option value="java">Java</option>
+                <option value="graphic-design">Graphic Design</option>
               </select>
             </div>
           </div>
