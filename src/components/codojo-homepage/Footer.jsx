@@ -61,7 +61,14 @@ const Footer = () => {
                   Scratch Coding
                 </Link>
               </li>
-
+              <li>
+                <Link
+                  to="/course-info"
+                  className="text-black-300 hover:text-pink-500"
+                >
+                  Java
+                </Link>
+              </li>
               <li>
                 <Link
                   to="/course-info"
@@ -114,14 +121,14 @@ const Footer = () => {
                   Contact Us
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/login"
                   className="text-black-300 hover:text-pink-500"
                 >
                   Login
                 </Link>
-              </li>
+              </li> */}
               {/* <li>
                 <Link to="#" className="text-balck-300 hover:text-white">
                   Support
