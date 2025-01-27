@@ -42,17 +42,17 @@ const CourseInfo = () => {
       curriculumLink: "/pdfs/scratch_programming_course.pdf",
     },
     {
-      name: "App Development",
+      name: "Java & Android App Development",
       description:
-        "Build responsive and interactive industry-grade iOS & Android apps",
+        "Build responsive and interactive industry-grade Android apps",
       keyPoints: [
-        "App layouts & core components",
-        "Responsive design",
-        "App deployment",
-        "Navigation & state management",
-        "Network request & data mgmt",
+        "Introduction to Java",
+        "Object oriented programming (OOPS)",
+        "Algorithmic thinking and control flow",
+        "Data structures and algorithms",
+        "Data mgmt & GUI programming",
       ],
-      curriculumLink: "/path/to/scratch-curriculum.pdf",
+      curriculumLink: "/pdfs/java_course.pdf",
     },
     {
       name: "Graphic Design",
