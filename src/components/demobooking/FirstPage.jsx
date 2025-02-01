@@ -87,14 +87,12 @@ const FirstPage = ({ onNextPage }) => {
       phone_number,
       student_grade,
       selected_course,
-      isAdult,
-      agreeTerms,
     };
     //
     if (validate()) {
       try {
         const response = await fetch(
-          "https://jsonplaceholder.typicode.com/posts",
+          "https://api.codojo.in/demos",
           {
             method: "POST",
             headers: {
@@ -105,7 +103,8 @@ const FirstPage = ({ onNextPage }) => {
         );
 
         if (response.ok) {
-          const result = await response.json();
+          // const result = await response.json();
+          const result = await response.body
           console.log("Success:", result);
           onNextPage(); // Navigate to the next page
         } else {
