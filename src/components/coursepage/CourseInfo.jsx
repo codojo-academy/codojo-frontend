@@ -65,7 +65,7 @@ const CourseInfo = () => {
         "Creating posters and presentations",
         "Visual storytelling",
       ],
-      curriculumLink: "/path/to/graphic-design-curriculum.pdf",
+      curriculumLink: "/pdfs/graphic_design_course.pdf",
     },
   ];
 
