@@ -1,6 +1,6 @@
 import useBookADemo from "../hooks/useBookADemo";
 import { IoMailOutline } from "react-icons/io5";
-import { GrPhone } from "react-icons/gr";
+// import { GrPhone } from "react-icons/gr";
 import { LuCalendarClock } from "react-icons/lu";
 
 const TrySession = () => {
@@ -32,15 +32,15 @@ const TrySession = () => {
             </a>
           </div>
         </div>
-        <div className="flex items-center  md:items-center lg:items-center  sm:items-start sm:justify-start  space-x-4">
+        {/* <div className="flex items-center  md:items-center lg:items-center  sm:items-start sm:justify-start  space-x-4">
           <GrPhone className="text-[#673AB7] text-4xl rounded-full bg-[#d8bfd8] p-1" />
           <div>
-            <p className="font-bold">Call us at</p>
+            <p className="font-bold">WhatsApp us at</p>
             <a href="" className="hover:text-[#673AB7]">
-              1234
+              
             </a>
           </div>
-        </div>
+        </div> */}
         <div className="flex items-center  md:items-center lg:items-center sm:items-start sm:justify-start space-x-4">
           <LuCalendarClock className="text-[#673AB7] text-4xl rounded-full bg-[#d8bfd8] p-1" />
           <div>
