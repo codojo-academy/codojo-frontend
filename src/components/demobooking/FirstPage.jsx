@@ -106,7 +106,9 @@ const FirstPage = ({ onNextPage }) => {
           // const result = await response.json();
           const result = await response.body
           console.log("Success:", result);
-          onNextPage(); // Navigate to the next page
+          // Navigate to the next page
+          // Pass data to BookADemo
+          onNextPage(formData);
         } else {
           console.error("Error:", response.statusText);
         }
