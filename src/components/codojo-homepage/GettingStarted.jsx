@@ -51,7 +51,7 @@ const GettingStarted = () => {
               <span className="text-gray-500 text-3xl sm:text-6xl">2</span>
               <div className="">
                 <h4 className="font-bold text-base sm:text-lg text-gray-700">
-                  Book the FREE trial class
+                  Book the FREE demo class
                 </h4>
                 <p className="text-xs sm:text-sm text-gray-500">
                   Choose a mentor of choice & <br /> your preferred time slot
