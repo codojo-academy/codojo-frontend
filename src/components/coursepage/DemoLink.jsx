@@ -25,7 +25,7 @@ const DemoLink = () => {
             className="bg-yellow-400 text-[#943000] hover:bg-yellow-500 transition-all py-3 px-6 rounded-lg font-semibold"
             onClick={bookADemoPage}
           >
-            Book a FREE trial class ➔
+            Book a FREE demo class ➔
           </button>
           {/* <div className="mt-6">
             <img src={downloadImage} alt="STEM Accredited" className="w-24" />
