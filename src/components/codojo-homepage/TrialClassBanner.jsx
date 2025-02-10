@@ -21,7 +21,7 @@ const TrialClassBanner = () => {
             Try a class for free
           </h4>
           <p className="text-gray-600 mb-6">
-            Equip your kids with education for tomorrow. Book a free trial
+            Equip your kids with education for tomorrow. Book a free demo class.
             coding class now!
           </p>
           <button

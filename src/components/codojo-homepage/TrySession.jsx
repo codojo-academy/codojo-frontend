@@ -44,7 +44,7 @@ const TrySession = () => {
         <div className="flex items-center  md:items-center lg:items-center sm:items-start sm:justify-start space-x-4">
           <LuCalendarClock className="text-[#673AB7] text-4xl rounded-full bg-[#d8bfd8] p-1" />
           <div>
-            <p className="font-bold">Book a free trial</p>
+            <p className="font-bold">Book a demo class</p>
             <a href="/book-a-demo" className="hover:text-[#673AB7]">
               Click here
             </a>
