@@ -86,7 +86,7 @@ const FirstPage = ({ onNextPage }) => {
     >
       <div>
         <h1 className="text-gray-80t0 font-bold pt-8  p-4 text-xl text-center">
-          Book your FREE trial <br></br> class in just
+          Book your FREE demo class <br></br> class in just
           <span className="text-[#E91E63]"> 1 minute!</span>
         </h1>
         <p className="text-center text-[#673AB7]">
