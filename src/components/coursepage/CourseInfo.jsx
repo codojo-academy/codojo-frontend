@@ -54,19 +54,19 @@ const CourseInfo = () => {
       ],
       curriculumLink: "/pdfs/java_course.pdf",
     },
-    {
-      name: "Graphic Design",
-      description:
-        "Explore creative tools and techniques to design visually appealing projects.",
-      keyPoints: [
-        "Basic design principles",
-        "Understanding colors and typography",
-        "Working with design software",
-        "Creating posters and presentations",
-        "Visual storytelling",
-      ],
-      curriculumLink: "/pdfs/graphic_design_course.pdf",
-    },
+    // {
+    //   name: "Graphic Design",
+    //   description:
+    //     "Explore creative tools and techniques to design visually appealing projects.",
+    //   keyPoints: [
+    //     "Basic design principles",
+    //     "Understanding colors and typography",
+    //     "Working with design software",
+    //     "Creating posters and presentations",
+    //     "Visual storytelling",
+    //   ],
+    //   curriculumLink: "/pdfs/graphic_design_course.pdf",
+    // },
   ];
 
   return (
@@ -97,7 +97,8 @@ const CourseInfo = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="bg-yellow-400 text-[#943000] font-bold py-2 px-6 rounded hover:bg-yellow-500 transition-colors duration-300 flex items-center gap-2">
+              {/* <button className="bg-yellow-400 text-[#943000] font-bold py-2 px-6 rounded hover:bg-yellow-500 transition-colors duration-300 flex items-center gap-2"> */}
+              <button className="bg-[#673AB7] hover:bg-[#E91E63] text-white font-bold py-2 px-4 rounded shadow-lg transition duration-300 ease-in-out transform hover:scale-105 flex items-center gap-2">
                 See Curriculum
                 <MdArrowOutward />
               </button>
@@ -108,5 +109,5 @@ const CourseInfo = () => {
     </div>
   );
 };
-
+// flex items-center gap-2
 export default CourseInfo;

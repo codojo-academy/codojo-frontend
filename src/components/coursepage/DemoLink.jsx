@@ -22,7 +22,8 @@ const DemoLink = () => {
             </li>
           </ul>
           <button
-            className="bg-yellow-400 text-[#943000] hover:bg-yellow-500 transition-all py-3 px-6 rounded-lg font-semibold"
+            // className="bg-yellow-400 text-[#943000] hover:bg-yellow-500 transition-all py-3 px-6 rounded-lg font-semibold"
+            className="bg-[#673AB7] hover:bg-[#E91E63] text-white font-bold py-2 px-4 rounded shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
             onClick={bookADemoPage}
           >
             Book a FREE demo class ➔

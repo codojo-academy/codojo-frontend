@@ -3,7 +3,7 @@ import appDev from "../images/appdev.jpeg";
 import webDev from "../images/WD.jpeg";
 import scratch from "../images/scratch.png";
 import DSA from "../images/DSA.png";
-import graphic from "../images/graphic.jpeg";
+// import graphic from "../images/graphic.jpeg";
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -61,19 +61,19 @@ const Carousel = () => {
         "Dynamic Programming",
       ],
     },
-    {
-      title: "Graphic Design",
-      description:
-        "Explore creative tools and techniques to design visually appealing projects.",
-      image: graphic,
-      features: [
-        "Basic design principles",
-        "Understanding colors and typography",
-        "Working with design software",
-        "Creating posters and presentations",
-        "Visual storytelling",
-      ],
-    },
+    // {
+    //   title: "Graphic Design",
+    //   description:
+    //     "Explore creative tools and techniques to design visually appealing projects.",
+    //   image: graphic,
+    //   features: [
+    //     "Basic design principles",
+    //     "Understanding colors and typography",
+    //     "Working with design software",
+    //     "Creating posters and presentations",
+    //     "Visual storytelling",
+    //   ],
+    // },
   ];
 
   // Adjust items per slide based on screen size

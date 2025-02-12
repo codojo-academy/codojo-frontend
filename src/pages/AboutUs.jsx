@@ -7,7 +7,7 @@ const AboutUs = () => {
       <Nav />
       <div className="bg-gray-100 py-28 lg:py-28 sm:py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-center mb-6 text-[#E91E63]">
+          <h1 className="text-4xl font-bold text-center mb-6 text-[#673AB7]">
             About Us
           </h1>
           <p className="text-lg text-gray-700 text-center mb-10">
