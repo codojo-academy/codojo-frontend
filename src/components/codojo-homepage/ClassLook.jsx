@@ -3,7 +3,7 @@ import oneOnone from "../images/oneonone.jpg";
 const ClassLook = () => {
   return (
     <div className=" flex flex-col justify-center items-center p-6 lg:py-20 ">
-      <h1 className="text-3xl font-bold text-center mb-8 text-pink-500">
+      <h1 className="text-3xl font-bold text-center mb-8 text-[#673AB7]">
         What does a typical class look like?
       </h1>
       <div className="flex flex-col md:flex-row gap-10 w-full max-w-6xl">

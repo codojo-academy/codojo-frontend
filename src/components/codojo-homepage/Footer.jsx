@@ -1,6 +1,7 @@
 // import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { IoMailOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -20,14 +21,6 @@ const Footer = () => {
               >
                 <FaInstagram className="text-4xl bg-[#ffe0eb] p-1 rounded" />
               </a>
-              {/* <a
-                href="https://www.instagram.com/codo_jo/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-pink-500 hover:text-pink-400"
-              >
-                <FaYoutube className="text-4xl bg-[#ffe0eb] p-1 rounded" />
-              </a> */}
               <a
                 href="https://www.linkedin.com/company/codojo0/"
                 target="_blank"
@@ -35,6 +28,14 @@ const Footer = () => {
                 className="text-pink-500 hover:text-pink-400"
               >
                 <FaLinkedin className="text-4xl bg-[#ffe0eb] p-1 rounded" />
+              </a>
+              <a
+                href="mailto:info@codojo.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-pink-500 hover:text-pink-400"
+              >
+                <IoMailOutline className="text-4xl bg-[#ffe0eb] p-1 rounded" />
               </a>
             </div>
           </div>
