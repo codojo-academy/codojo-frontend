@@ -8,7 +8,6 @@
 // };
 
 import { nextui } from "@nextui-org/react";
-import scrollbarHide from "tailwind-scrollbar-hide";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -22,5 +21,5 @@ export default {
     extend: {},
   },
   darkMode: "class",
-  plugins: [nextui(), scrollbarHide],
+  plugins: [nextui()],
 };
