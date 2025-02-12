@@ -1,7 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
+import { useEffect } from "react";
 import Footer from "../components/codojo-homepage/Footer";
 import Nav from "../components/codojo-homepage/Nav";
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Nav />
