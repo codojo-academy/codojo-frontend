@@ -8,9 +8,6 @@ import TrialClassBanner from "../components/codojo-homepage/TrialClassBanner";
 import TrySession from "../components/codojo-homepage/TrySession";
 import Footer from "../components/codojo-homepage/Footer";
 
-// import CarouselComponent from "../components/codojo-homepage/CarouselComponent";
-// import CourseOverview from "../components/codojo-homepage/CourseOverview";
-
 const Home = () => {
   return (
     <>
@@ -23,8 +20,6 @@ const Home = () => {
       <TrialClassBanner />
       <TrySession />
       <Footer />
-      {/* <CarouselComponent /> */}
-      {/* <CourseOverview /> */}
     </>
   );
 };
