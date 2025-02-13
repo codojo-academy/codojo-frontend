@@ -170,7 +170,7 @@ const Carousel = () => {
         </div>
 
         {/* Pagination Dots */}
-        <div className="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+        <div className="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-2 left-1/2 ">
           {Array.from({ length: totalSlides }).map((_, index) => (
             <button
               key={index}
