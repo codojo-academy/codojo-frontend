@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Nav from "../components/codojo-homepage/Nav";
 import Content from "../components/codojo-homepage/Content";
 import ClassLook from "../components/codojo-homepage/ClassLook";
@@ -9,6 +10,9 @@ import TrySession from "../components/codojo-homepage/TrySession";
 import Footer from "../components/codojo-homepage/Footer";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Nav />

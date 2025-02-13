@@ -21,8 +21,8 @@ const TrialClassBanner = () => {
             Try a class for free
           </h4>
           <p className="text-gray-600 mb-6">
-            Equip your kids with education for tomorrow. Book a free demo class.
-            coding class now!
+            Equip your kids with education for tomorrow. Book a free demo coding
+            class now!
           </p>
           <button
             className="bg-[#673AB7] hover:bg-[#E91E63] text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
