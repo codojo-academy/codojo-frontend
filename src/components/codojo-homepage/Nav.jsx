@@ -1,8 +1,10 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import icon from "../images/icon.png"; // Make sure this path is correct
+import icon from "../images/icon.png";
+import { FiMenu, FiX } from "react-icons/fi"; // Import menu icons
 
 export default function Nav() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   // const [isLoggedIn, setIsLoggedIn] = useState(false); /* true */
 
   return (
@@ -13,15 +15,11 @@ export default function Nav() {
             {/* Brand */}
             <div className="flex-shrink-0 flex items-center">
               <Link to="/">
-                <img
-                  src={icon}
-                  alt="Interactive class"
-                  className="h-8 w-auto"
-                />
+                <img src={icon} alt="icon" className="h-8 w-auto" />
               </Link>
               <Link
                 to="/"
-                className="text-xl font-bold ml-2 hidden sm:block text-transparent bg-clip-text bg-gradient-to-r from-[#673AB7]  to-[#E91E63]"
+                className="text-xl font-bold ml-2  sm:block text-transparent bg-clip-text bg-gradient-to-r from-[#673AB7]  to-[#E91E63]"
               >
                 CODOJO
               </Link>
@@ -48,7 +46,6 @@ export default function Nav() {
               </Link>
             </div>
           </div>
-
           {/* Right side of Navbar */}
           {/* <div className="flex items-center space-x-4">
             {isLoggedIn ? (
@@ -76,8 +73,41 @@ export default function Nav() {
               </Link>
             )}
           </div> */}
+          {/* ✅ Hamburger Menu Button (Small Screens) */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="sm:hidden text-gray-700 focus:outline-none"
+          >
+            {isMenuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
+          </button>
         </div>
       </div>
+      {/* ✅ Mobile Menu */}
+      {isMenuOpen && (
+        <div className="sm:hidden absolute top-20 left-0 h-screen w-full bg-white shadow-md">
+          <Link
+            to="/"
+            className="block px-4 py-2 text-gray-700 font-semibold hover:bg-gray-100"
+            onClick={() => setIsMenuOpen(false)} // ✅ Close menu on click
+          >
+            Home
+          </Link>
+          <Link
+            to="/course-info"
+            className="block px-4 py-2 text-gray-700 font-semibold hover:bg-gray-100"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Courses
+          </Link>
+          <Link
+            to="/aboutus"
+            className="block px-4 py-2 text-gray-700 font-semibold hover:bg-gray-100"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            About Us
+          </Link>
+        </div>
+      )}
     </nav>
   );
 }
