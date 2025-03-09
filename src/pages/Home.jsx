@@ -5,6 +5,7 @@ import ClassLook from "../components/codojo-homepage/ClassLook";
 import GettingStarted from "../components/codojo-homepage/GettingStarted";
 import Carousel from "../components/codojo-homepage/Carousel";
 import SetsUpApart from "../components/codojo-homepage/SetsUpApart";
+import Testimonials from "../components/codojo-homepage/Testimonials";
 import TrialClassBanner from "../components/codojo-homepage/TrialClassBanner";
 import TrySession from "../components/codojo-homepage/TrySession";
 import Footer from "../components/codojo-homepage/Footer";
@@ -21,6 +22,7 @@ const Home = () => {
       <GettingStarted />
       <Carousel />
       <SetsUpApart />
+      <Testimonials />
       <TrialClassBanner />
       <TrySession />
       <Footer />
