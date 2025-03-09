@@ -2,17 +2,13 @@
 import useBookADemo from "../hooks/useBookADemo";
 import downloadImage from "../images/content.png";
 import { GoHome } from "react-icons/go";
-import { LuUser2 } from "react-icons/lu";
+
+import { AiOutlineUser } from "react-icons/ai";
 import { BsStars } from "react-icons/bs";
 import { RiCalendarScheduleLine } from "react-icons/ri";
 
 const Content = () => {
   const { bookADemoPage } = useBookADemo();
-  //   const navigate = useNavigate();
-  //
-  //   const bookADemoPage = () => {
-  //     navigate("/book-a-demo");
-  //   };
 
   return (
     <div className="flex flex-col md:flex-row md:justify-around gap-6 py-20 lg:py-20 sm:py-10 items-center bg-gray-100">
@@ -31,7 +27,7 @@ const Content = () => {
             Learn comfortably from home
           </li>
           <li className="flex items-center gap-2 text-base sm:text-lg lg:text-xl">
-            <LuUser2 className="text-xl sm:text-2xl lg:text-3xl text-[#E91E63]" />
+            <AiOutlineUser className="text-xl sm:text-2xl lg:text-3xl text-[#E91E63]" />
             Guided by a dedicated expert mentor
           </li>
           <li className="flex items-center gap-2 text-base sm:text-lg lg:text-xl">

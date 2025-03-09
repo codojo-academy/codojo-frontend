@@ -78,14 +78,14 @@ const Footer = () => {
                   DSA
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/course-info"
                   className="text-black-300 hover:text-pink-500"
                 >
                   Graphic Design
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div>
